@@ -19,9 +19,10 @@ mkdir -p ${OLD}
 
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 for FILE in ${DIR}/*; do
-    # skip *.sh files 
-    if [[ ! ${FILE} == *.sh ]]; then
+    # skip *.sh files and README.md 
+    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] ; then
         BASE=`echo ${FILE} | cut -c ${LEN}-`
+        echo $BASE
         echo "Moving ~/.${BASE} to ${OLD}"
         cp -LR ~/.${BASE} ${OLD}/${BASE}
         echo "Creating symlink to ${FILE} in home directory"
