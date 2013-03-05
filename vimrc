@@ -4,7 +4,7 @@ set is
 set autowrite
 "set mouse=nv
 set clipboard=unnamed
-
+set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -27,12 +27,13 @@ autocmd BufEnter *.php setlocal indentexpr=
 hi CursorLine ctermbg=239  cterm=none "Allows for highlighting in the terminal
 
 set t_Co=256
-colorscheme peaksea 
+colorscheme twilight 
+highlight clear SignColumn
+highlight LineNr ctermfg=grey
 
 " zz centers the screen
 nmap n nzz
 nmap N Nzz
-
 nmap k gk
 nmap j gj
 
