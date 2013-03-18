@@ -54,6 +54,16 @@ if [ -d "/usr/local/mysql/bin" ] ; then
   PATH=/usr/local/mysql/bin:${PATH}
 fi
 
+# scala
+if [ -d "/Applications/scala/scala-2.10.1/bin" ] ; then
+  PATH=/Applications/scala/scala-2.10.1/bin:${PATH}
+fi
+
+# sbt
+if [ -d "/Applications/sbt/bin" ] ; then
+  PATH=/Applications/sbt/bin:${PATH}
+fi
+
 # mysql libs on the mac
 #export DYLD_LIBRARY_PATH="/usr/local/mysql/lib:$DYLD_LIBRARY_PATH"
 
