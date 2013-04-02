@@ -156,3 +156,5 @@ _prompt_command () {
 # set the prompt command
 PROMPT_COMMAND=_prompt_command
 export PROMPT_COMMAND
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
