@@ -81,7 +81,7 @@ if [ -d "${HOME}/.rvm" ] ; then
 	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 fi
 
-export MAVEN_OPTS="-Xms512 -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
+export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
 
 ##
 # Your previous /Users/miker/.bash_profile file was backed up as /Users/miker/.bash_profile.macports-saved_2012-09-13_at_13:04:13
