@@ -25,7 +25,7 @@ fi
 
 # set short hostname for the prompt
 SHORTHOST=`hostname`
-SHORTHOST=${SHORTHOST/\.smartertravel*/}
+SHORTHOST=${SHORTHOST/\.zvents*/}
 
 # echo the a shortened pwd. 
 # will chomp down the chars needed for tab complete
