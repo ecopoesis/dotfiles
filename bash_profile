@@ -7,6 +7,8 @@ pathadd() {
     fi
 }
 
+pathadd /bin
+pathadd /sbin
 pathadd /usr/bin
 pathadd /usr/sbin
 pathadd /usr/local/bin
@@ -56,8 +58,9 @@ if [ -d "/opt/local/info" ] ; then
   INFOPATH=/opt/local/info:${INFOPATH}
 fi
 
+# load RVM
 if [ -d "${HOME}/.rvm" ] ; then
-	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 fi
 
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
