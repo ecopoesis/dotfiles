@@ -17,7 +17,7 @@ pathadd ${HOME}/bin
 pathadd /opt/local/bin
 pathadd /opt/local/sbin
 pathadd /usr/local/mysql/bin
-pathadd /Applications/scala/scala-2.10.1/bin
+pathadd /Applications/scala/scala-2.10.2/bin
 pathadd /Applications/sbt/bin
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
