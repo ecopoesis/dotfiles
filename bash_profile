@@ -27,8 +27,8 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 # mac java 
-if [ -d /Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre ]; then
-    export JAVA_HOME=/Library/Java/JavaVirtualMachines/1.7.0.jdk/Contents/Home/jre
+if [ -d `/usr/libexec/java_home` ]; then
+    export JAVA_HOME=`/usr/libexec/java_home`
 fi
 
 # hive and hadoop
