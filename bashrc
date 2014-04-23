@@ -147,8 +147,15 @@ _prompt_command () {
     SCREENINFO=""
   fi 
 
+  BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2)
+  if [ -z $BRANCH ]; then
+    BRANCH_DISP=""
+  else
+    BRANCH_DISP=" $txtgrn($txtpur$BRANCH$txtgrn)"
+  fi
+
   # set the prompts
-  PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]$ $txtrst"
+  PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]${BRANCH_DISP}$ $txtrst"
   PS2='> '
   PS4='+ '
 }
@@ -158,3 +165,6 @@ PROMPT_COMMAND=_prompt_command
 export PROMPT_COMMAND
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

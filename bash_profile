@@ -17,9 +17,9 @@ pathadd ${HOME}/bin
 pathadd /opt/local/bin
 pathadd /opt/local/sbin
 pathadd /usr/local/mysql/bin
-pathadd /Applications/scala/scala-2.10.2/bin
-pathadd /Applications/sbt/bin
-pathadd /Applications/play/play-2.2.0
+pathadd ~/tools/scala/bin
+pathadd ~/tools/sbt/bin
+pathadd ~/tools/play
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
   eval `ssh-agent`
@@ -28,7 +28,7 @@ fi
 
 # mac java 
 if [ -d `/usr/libexec/java_home` ]; then
-    export JAVA_HOME=`/usr/libexec/java_home`
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_45`
 fi
 
 # hive and hadoop
@@ -65,4 +65,4 @@ if [ -d "${HOME}/.rvm" ] ; then
 fi
 
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
-
+export SBT_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
