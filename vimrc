@@ -43,3 +43,6 @@ nmap j gj
 "imap <C-v> <Esc>"+gP o 	  				 	 	 	   	 	  	   		  	 
 "vmap <C-c> "+y  	  				 	 	 	   	 	  	   		  	 
 "vmap <C-v> "+gP 
+
+hi def link gitcommitSummary Normal 
+hi def link gitcommitBlank Normal 
