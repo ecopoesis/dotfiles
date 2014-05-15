@@ -28,7 +28,7 @@ fi
 
 # mac java 
 if [ -d `/usr/libexec/java_home` ]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_45`
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`
 fi
 
 # hive and hadoop
@@ -65,4 +65,4 @@ if [ -d "${HOME}/.rvm" ] ; then
 fi
 
 export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
-export SBT_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
+export SBT_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=1024m -Duser.timezone=UTC"
