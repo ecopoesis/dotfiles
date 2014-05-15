@@ -147,8 +147,8 @@ _prompt_command () {
     SCREENINFO=""
   fi 
 
-  BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2)
-  if [ -z $BRANCH ]; then
+  BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
+  if [[ -z $BRANCH ]]; then
     BRANCH_DISP=""
   else
     BRANCH_DISP=" $txtgrn($txtpur$BRANCH$txtgrn)"
