@@ -27,7 +27,7 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 # mac java 
-if [ -d `/usr/libexec/java_home` ]; then
+if [[ -f /usr/libexec/java_home ]]; then
     export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`
 fi
 
