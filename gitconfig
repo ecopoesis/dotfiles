@@ -1,0 +1,14 @@
+[user]
+	name = Mike Roberts
+	email = miker@miker.org
+[push]
+	default = simple
+[core]
+	trustctime = false
+	autocrlf = input
+	editor = vim
+[merge]
+	tool = diffmerge
+[mergetool "diffmerge"]
+	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
+	trustExitCode = true
