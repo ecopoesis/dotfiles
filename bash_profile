@@ -14,12 +14,12 @@ pathadd /usr/sbin
 pathadd /usr/local/bin
 pathadd /usr/local/sbin
 pathadd ${HOME}/bin
-pathadd /opt/local/bin
-pathadd /opt/local/sbin
 pathadd /usr/local/mysql/bin
 pathadd ~/tools/scala/bin
 pathadd ~/tools/sbt/bin
-pathadd ~/tools/play
+pathadd ~/tools/activator
+pathadd ~/tools/android-sdk-macosx/platform-tools
+pathadd ~/bin
 
 if [ -z "$SSH_AUTH_SOCK" ]; then
   eval `ssh-agent`
@@ -28,7 +28,8 @@ fi
 
 # mac java 
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0`
+    #export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_71`
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_25`
 fi
 
 # hive and hadoop
@@ -64,5 +65,31 @@ if [ -d "${HOME}/.rvm" ] ; then
 	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" 
 fi
 
-export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=512m -Duser.timezone=UTC"
-export SBT_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -XX:MaxPermSize=1024m -Duser.timezone=UTC"
+# android SDKs
+if [ -d "${HOME}/tools/android-sdk-macosx" ] ; then
+    export ANDROID_HOME=${HOME}/tools/android-sdk-macosx
+fi
+
+if [ -d "$HOME/tools/android-ndk-r9d" ] ; then
+    export ANDROID_NDK_HOME=${HOME}/tools/android-ndk-r9d
+fi
+
+# use mac git instead of macports
+if [ -f /usr/bin/git ] ; then
+    alias git=/usr/bin/git
+fi
+
+export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC"
+export SBT_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
+export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC"
+
+function mountAndroid { hdiutil attach ~/code/android.dmg.sparseimage -mountpoint /Volumes/android; }
+
+# MacPorts Installer addition on 2014-12-29_at_12:51:02: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
+
+# set the number of open files to be 1024
+ulimit -S -n 1024
+
+
