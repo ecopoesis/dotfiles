@@ -147,11 +147,18 @@ _prompt_command () {
     SCREENINFO=""
   fi 
 
+  DIRTYFILES=$(git status --porcelain 2>/dev/null)
+  if [[ -z $DIRTYFILES ]]; then
+    DIRTY_DISP=""
+  else
+    DIRTY_DISP=" $txtred*"
+  fi
+
   BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
   if [[ -z $BRANCH ]]; then
     BRANCH_DISP=""
   else
-    BRANCH_DISP=" $txtgrn($txtpur$BRANCH$txtgrn)"
+    BRANCH_DISP=" $txtgrn($txtpur${BRANCH}${DIRTY_DISP}$txtgrn)"
   fi
 
   # set the prompts
