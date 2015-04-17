@@ -1,5 +1,7 @@
 set -o notify
 
+shopt -s histappend
+
 export SVN_EDITOR="vim" 
 
 # load bash_completion 
