@@ -29,7 +29,7 @@ fi
 # mac java 
 if [[ -f /usr/libexec/java_home ]]; then
     #export JAVA_HOME=`/usr/libexec/java_home -v 1.7.0_71`
-    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_25`
+    export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_45`
 fi
 
 # hive and hadoop

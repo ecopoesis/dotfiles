@@ -177,3 +177,10 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# VR NOC Stuff
+export VR_SUPPLY_HOME=$HOME/code/vr-supply
+export PATH=$PATH:$VR_SUPPLY_HOME/scripts
+export GRADLE_OPTS="-Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
+
+
