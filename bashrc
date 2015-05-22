@@ -149,14 +149,45 @@ _prompt_command () {
     SCREENINFO=""
   fi 
 
-  DIRTYFILES=$(git status --porcelain 2>/dev/null)
+  # determine if we're in a git repo
+  if [ -d .git ] || (git rev-parse --git-dir > /dev/null 2>&1); then
+    GIT=1
+  else
+    GIT=0
+  fi
+
+  # setup empty variables
+  DIRTYFILES=""
+  BRANCH=""
+
+  # prefer git over hg, if only because the commands are quicker to run
+  if [[ $GIT == 1 ]]; then
+    DIRTYFILES=$(git status --porcelain 2>/dev/null)
+    BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
+  else
+    # determine if we're in an HG repo
+    hg --cwd . root >/dev/null 2>/dev/null
+    rc=$?; if [[ $rc != 0 ]]; then HG=0; else HG=1; fi
+
+    if [[ $HG == 1 ]]; then
+      DIRTYFILES=$(hg status 2>/dev/null)
+      HG_BRANCH=$(hg branch 2>/dev/null)
+      HG_BOOKMARK=$(hg bookmarks 2>/dev/null | grep '*' | perl -pe 's/.*?\*\s*(\S*).*/\1/')
+      if [[ -z $HG_BOOKMARK ]]; then
+        BRANCH="${HG_BRANCH}"
+      else
+        BRANCH="${HG_BRANCH}:${HG_BOOKMARK}"
+      fi
+    fi
+  fi
+
+  # setup prompt pieces
   if [[ -z $DIRTYFILES ]]; then
     DIRTY_DISP=""
   else
     DIRTY_DISP=" $txtred*"
   fi
 
-  BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
   if [[ -z $BRANCH ]]; then
     BRANCH_DISP=""
   else
@@ -182,5 +213,3 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export VR_SUPPLY_HOME=$HOME/code/vr-supply
 export PATH=$PATH:$VR_SUPPLY_HOME/scripts
 export GRADLE_OPTS="-Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
-
-

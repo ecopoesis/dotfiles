@@ -7,6 +7,9 @@ username = Mike Roberts <mroberts@tripadvisor.com>
 [extensions]
 histedit = 
 hgext.extdiff =
+shelve=
+mercurial_keyring=
+bookmarks=
 # uncomment these lines to enable some popular extensions
 # (see "hg help extensions" for more info)
 #
