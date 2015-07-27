@@ -212,4 +212,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 # VR NOC Stuff
 export VR_SUPPLY_HOME=$HOME/code/vr-supply
 export PATH=$PATH:$VR_SUPPLY_HOME/scripts
-export GRADLE_OPTS="-Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
+export GRADLE_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
+
+# prefer gnu
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"

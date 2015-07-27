@@ -92,4 +92,40 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # set the number of open files to be 1024
 ulimit -S -n 1024
 
+# ta AutoMagicTrtop
+function findtrtop {
+        candidate=`pwd`
+        while true; do
+                if [[ -e "$candidate/GNUmaster" &&  -e "$candidate/tr" && -e "$candidate/Crawlers" ]]; then
+                        trtop $candidate
+                        break;
+                else
+                        nextcandidate=${candidate%/*}
+                        if [[ "v$nextcandidate" == "v$candidate" || "v$nextcandidate" == "v" ]]; then
+                                break;
+                        fi
+                        candidate=$nextcandidate;
+                fi
+        done
+}
+                                                                                                                                                                                                     
+function trtop {
+        if (( $# == 1 )); then
+                oldscripts=$TRTOP/scripts
+                export TRTOP=$1
+                export PATH=${PATH//:$oldscripts}:$TRTOP/scripts
+        else
+                echo $TRTOP
+        fi
+}
+
+export PROMPT_COMMAND="findtrtop; $PROMPT_COMMAND"
+
+##
+# Your previous /Users/mroberts/.bash_profile file was backed up as /Users/mroberts/.bash_profile.macports-saved_2015-07-27_at_10:20:56
+##
+
+# MacPorts Installer addition on 2015-07-27_at_10:20:56: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+# Finished adapting your PATH environment variable for use with MacPorts.
 
