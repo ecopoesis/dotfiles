@@ -215,4 +215,6 @@ export PATH=$PATH:$VR_SUPPLY_HOME/scripts
 export GRADLE_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
 
 # prefer gnu
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+if [ -e /usr/local/bin/brew ]; then
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+fi
