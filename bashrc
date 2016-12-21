@@ -37,14 +37,14 @@ if [ -f ~/.path ]; then
    source ~/.path
 fi
 
-# load aliases
-if [ -f ~/.alias ]; then
-   source ~/.alias
-fi
-
 # load functions
 if [ -f ~/.function ]; then
    source ~/.function
+fi
+
+# load aliases
+if [ -f ~/.alias ]; then
+   source ~/.alias
 fi
 
 # load prompt
@@ -56,7 +56,9 @@ fi
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # load direnv
-eval "$(direnv hook bash)"
+if exists direnv ; then
+  eval "$(direnv hook bash)"
+fi
 
 # make SSH agent work
 if [ -z "$SSH_AUTH_SOCK" ]; then
