@@ -35,3 +35,8 @@ fi
 if [ -d "/opt/local/info" ]; then
   INFOPATH=/opt/local/info:${INFOPATH}
 fi
+
+# prefer gnu core tools
+if [ -e /usr/local/bin/brew ]; then
+    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+fi

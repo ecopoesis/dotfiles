@@ -1,8 +1,22 @@
 set -o notify
 
+# Case-insensitive globbing (used in pathname expansion)
+shopt -s nocaseglob;
+
+# Autocorrect typos in path names when using `cd`
+shopt -s cdspell;
+
 # setup history
 shopt -s histappend
 export HISTCONTROL="ignoredups"
+export HISTSIZE=500000
+export HISTFILESIZE=100000
+export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
+export HISTTIMEFORMAT='%F %T '
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\e[C": forward-char'
+bind '"\e[D": backward-char'
 
 export SVN_EDITOR="vim"
 
@@ -11,24 +25,31 @@ export BASH_COMPLETION="`cd ~; pwd`/.completion"
 export BASH_COMPLETION_DIR="`cd ~; pwd`/.completion.d"
 source $BASH_COMPLETION
 
-# load aliases
-if [ -f ~/.alias ]; then
-   source ~/.alias
-fi
+# Don’t clear the screen after quitting a manual page
+export MANPAGER="less -X"
 
-# load prompt
-if [ -f ~/.prompt ]; then
-   source ~/.prompt
-fi
+# Prefer US English and use UTF-8
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US"
 
 # load path
 if [ -f ~/.path ]; then
    source ~/.path
 fi
 
-# prefer gnu core tools
-if [ -e /usr/local/bin/brew ]; then
-    export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
+# load aliases
+if [ -f ~/.alias ]; then
+   source ~/.alias
+fi
+
+# load functions
+if [ -f ~/.function ]; then
+   source ~/.function
+fi
+
+# load prompt
+if [ -f ~/.prompt ]; then
+   source ~/.prompt
 fi
 
 # load NVM

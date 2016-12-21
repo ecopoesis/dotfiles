@@ -71,6 +71,11 @@ _dir_chomp_tab () {
 }
 
 _prompt_command () {
+  # Record each line as it gets issued
+  history -a
+  history -c
+  history -r
+
   # set some colors
 
   # regular text colors
