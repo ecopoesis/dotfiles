@@ -1,0 +1,37 @@
+## set paths
+
+# add a directory to the path if it isn't there already, and the directory exists
+pathadd() {
+    if [ -d "$1" ] && [[ ":$PATH:" != *":$1:"* ]]; then
+        PATH="${PATH:+"$PATH:"}$1"
+    fi
+}
+
+pathadd /bin
+pathadd /sbin
+pathadd /usr/bin
+pathadd /usr/sbin
+pathadd /usr/local/bin
+pathadd /usr/local/sbin
+pathadd ${HOME}/bin
+pathadd /usr/local/mysql/bin
+pathadd ~/tools/scala/bin
+pathadd ~/tools/sbt/bin
+pathadd ~/tools/activator
+pathadd ~/tools/android-sdk-macosx/platform-tools
+pathadd ~/bin
+pathadd ${HOME}/.rvm/bin
+pathadd /usr/local/heroku/bin
+pathadd ${HOME}/.nvm
+
+# macports
+pathadd /opt/local/bin
+pathadd /opt/local/sbin
+
+if [ -d "/opt/local/man" ]; then
+  MANPATH=/opt/local/man:${MANPATH}
+fi
+
+if [ -d "/opt/local/info" ]; then
+  INFOPATH=/opt/local/info:${INFOPATH}
+fi
