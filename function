@@ -1,6 +1,6 @@
 ## useful functions
 
-function h() {
+function hist() {
     history | grep "$1"
 }
 

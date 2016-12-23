@@ -7,14 +7,13 @@ set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=indent,eol,start
 
 syntax on
 
 filetype indent on
 filetype plugin on
 
-"au BufRead,BufNewFile * set filetype=php
-au BufRead,BufNewFile *.tpt set filetype=php
 au BufRead,BufNewFile *.java set filetype=java
 
 autocmd BufEnter *.html setlocal indentexpr=
@@ -22,6 +21,8 @@ autocmd BufEnter *.htm setlocal indentexpr=
 autocmd BufEnter *.xml setlocal indentexpr=
 autocmd BufEnter *.xsd setlocal indentexpr= 
 autocmd BufEnter *.php setlocal indentexpr= 
+
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 hi CursorLine ctermbg=239  cterm=none "Allows for highlighting in the terminal
 

@@ -13,4 +13,9 @@
 	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
 	trustExitCode = true
 [color]
-	ui = auto
+    ui = auto
+[alias]
+    l = log --pretty=colored
+[pretty]
+    colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+      
