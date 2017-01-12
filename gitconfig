@@ -7,6 +7,7 @@
 	trustctime = false
 	autocrlf = input
 	editor = vim
+	excludesfile = /Users/miker/.gitignore_global
 [merge]
 	tool = diffmerge
 [mergetool "diffmerge"]
