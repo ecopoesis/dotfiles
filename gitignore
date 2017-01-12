@@ -11,3 +11,6 @@ tags
 tmp/**/*
 !tmp/cache/.keep
 *.pyc
+.generators
+.rakeTasks
+.rake_tasks~
