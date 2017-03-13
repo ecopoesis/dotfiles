@@ -102,3 +102,12 @@ fi
 
 # set the number of open files to be 1024
 ulimit -S -n 1024
+
+# why is it an immutable law of the universe that all software named spring has to suck?
+export DISABLE_SPRING=1
+
+export SALSIFY_HOME=${HOME}/code
+
+if exists brew; then
+    export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
+fi

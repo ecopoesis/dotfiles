@@ -14,3 +14,4 @@ tmp/**/*
 .generators
 .rakeTasks
 .rake_tasks~
+.ruby-gemset
