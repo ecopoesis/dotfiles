@@ -1,8 +1,5 @@
-# example user config (see "hg help config" for more info)
 [ui]
-# name and email, e.g.
-# username = Jane Doe <jdoe@example.com>
-username = Mike Roberts <mroberts@tripadvisor.com>
+username = Mike Roberts <miker@miker.org>
 
 [extensions]
 histedit = 
