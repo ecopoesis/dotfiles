@@ -13,10 +13,14 @@ export HISTSIZE=500000
 export HISTFILESIZE=100000
 export HISTIGNORE="&:[ ]*:exit:ls:bg:fg:history:clear"
 export HISTTIMEFORMAT='%F %T '
-bind '"\e[A": history-search-backward'
-bind '"\e[B": history-search-forward'
-bind '"\e[C": forward-char'
-bind '"\e[D": backward-char'
+
+case "$-" in
+    *i*)    
+        bind '"\e[A": history-search-backward'
+        bind '"\e[B": history-search-forward'
+        bind '"\e[C": forward-char'
+        bind '"\e[D": backward-char'
+esac
 
 export SVN_EDITOR="vim"
 
