@@ -41,7 +41,7 @@ function la(){
 
 # swap less for more
 if exists less; then
-  alias more='less'
+  alias more='less -X'
 fi
 
 # use mac git instead of macports

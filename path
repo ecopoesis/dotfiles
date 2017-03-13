@@ -23,6 +23,7 @@ pathadd ~/bin
 pathadd ${HOME}/.rvm/bin
 pathadd /usr/local/heroku/bin
 pathadd ${HOME}/.nvm
+pathadd ${HOME}/code/potpourri/bin
 
 # macports
 pathadd /opt/local/bin

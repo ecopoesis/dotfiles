@@ -2,20 +2,18 @@ set nohls
 set ic
 set is
 set autowrite
-"set mouse=nv
 set clipboard=unnamed
 set number
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set backspace=indent,eol,start
 
 syntax on
 
 filetype indent on
 filetype plugin on
 
-"au BufRead,BufNewFile * set filetype=php
-au BufRead,BufNewFile *.tpt set filetype=php
 au BufRead,BufNewFile *.java set filetype=java
 
 autocmd BufEnter *.html setlocal indentexpr=
@@ -23,6 +21,8 @@ autocmd BufEnter *.htm setlocal indentexpr=
 autocmd BufEnter *.xml setlocal indentexpr=
 autocmd BufEnter *.xsd setlocal indentexpr= 
 autocmd BufEnter *.php setlocal indentexpr= 
+
+autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 
 hi CursorLine ctermbg=239  cterm=none "Allows for highlighting in the terminal
 
@@ -37,12 +37,13 @@ nmap N Nzz
 nmap k gk
 nmap j gj
 
-"nmap e 0mpww ywGO<Tab>public function get<Esc>pb   ~$a() {<Enter><Tab><Tab>return $this-><Esc>pa;<Enter><Tab>}<Enter><Enter><Tab>public function set<Esc>pb   ~$a($<Esc>pa) {<Enter><Tab><Tab>$this-><Esc>pa = $<Esc>pa;<Enter><Tab>}<Enter><Esc>'pj
-
-"imap <C-c> <Esc>"+y o 	  				 	 	 	   	 	  	   		  	 
-"imap <C-v> <Esc>"+gP o 	  				 	 	 	   	 	  	   		  	 
-"vmap <C-c> "+y  	  				 	 	 	   	 	  	   		  	 
-"vmap <C-v> "+gP 
-
 hi def link gitcommitSummary Normal 
 hi def link gitcommitBlank Normal 
+
+" Send more characters for redraws
+set ttyfast
+" Enable mouse use in all modes
+set mouse=a
+" Set this to the name of your terminal that supports mouse codes.
+" Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
+set ttymouse=xterm2
