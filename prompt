@@ -144,7 +144,8 @@ _prompt_command () {
   # prefer git over hg, if only because the commands are quicker to run
   if [[ $GIT == 1 ]]; then
     DIRTYFILES=$(git status --porcelain 2>/dev/null)
-    BRANCH=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
+    BRANCH_RAW=$(git branch 2>/dev/null | grep '^*' | colrm 1 2 | perl -pe 's/\(*([^\)]*)\)*/\1/')
+    printf -v BRANCH "%q" "${BRANCH_RAW}"
   else
     # determine if we're in an HG repo
     hg --cwd . root >/dev/null 2>/dev/null
@@ -152,8 +153,10 @@ _prompt_command () {
 
     if [[ $HG == 1 ]]; then
       DIRTYFILES=$(hg status 2>/dev/null)
-      HG_BRANCH=$(hg branch 2>/dev/null)
-      HG_BOOKMARK=$(hg bookmarks 2>/dev/null | grep '*' | perl -pe 's/.*?\*\s*(\S*).*/\1/')
+      HG_BRANCH_RAW=$(hg branch 2>/dev/null)
+      HG_BOOKMARK_RAW=$(hg bookmarks 2>/dev/null | grep '*' | perl -pe 's/.*?\*\s*(\S*).*/\1/')
+      printf -v HG_BRANCH "%q" "${HG_BRANCH_RAW}"
+      printf -v HG_BOOKMARK "%q" "${HG_BOOKMARK_RAW}"    
       if [[ -z $HG_BOOKMARK ]]; then
         BRANCH="${HG_BRANCH}"
       else
