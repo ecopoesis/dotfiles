@@ -23,7 +23,7 @@ mkdir -p ${OLD}
 # move any existing dotfiles in homedir to dotfiles/old directory, then create symlinks
 for FILE in ${DIR}/*; do
     # skip *.sh files and README.md
-    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]] && [[ ! ${FILE} == *mac ]] ; then
+    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]] && [[ ! ${FILE} == *mac ]] && [[ ! ${FILE} == *jetbrains ]]; then
         BASE=`echo ${FILE} | cut -c ${LEN}-`
 
         if [ -f ${BASE} ]; then
@@ -50,5 +50,14 @@ cp ${DIR}/fonts/* ${FONT_DIR}
 
 # setup Mac desktop specific stuff
 if [[ `uname` == 'Darwin' ]]; then
+  # iterm
+  defaults delete com.googlecode.iterm2
   rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && ln -s ${DIR}/mac/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+  defaults read com.googlecode.iterm2
+
+  # jetbrains
+  for JB_PREF_DIR in ${DIR}/jetbrains/*; do
+    BASE="$(basename ${JB_PREF_DIR})"
+    rm -rf ${HOME}/Library/Preferences/${BASE} && ln -s ${DIR}/jetbrains/${BASE} ${HOME}/Library/Preferences/${BASE}
+  done
 fi
