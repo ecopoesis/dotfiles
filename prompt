@@ -1,5 +1,5 @@
 ## set prompt
-## [user@host:/shrt/dir/name] (branch *)$
+## [user@host#0/shrt/dir/name] (branch *)$
 
 # set short hostname for the prompt
 SHORTHOST=`hostname`
@@ -125,9 +125,16 @@ _prompt_command () {
 
   # detect if we're in screen
   if [[ "$TERMCAP" =~ "screen" ]]; then
-    SCREENINFO="$txtblk#$txtpur${WINDOW}"
+    SCREENINFO="$txtblk#$txtpurS${WINDOW}"
   else
     SCREENINFO=""
+  fi
+
+  # detect if we're in tmux
+  if [ -n "$TMUX" ]; then 
+    TMUXINFO="$txtblk#$txtpur$(tmux display-message -p '#I')"
+  else
+    TMUXINFO=""
   fi
 
   # determine if we're in a git repo
@@ -179,7 +186,7 @@ _prompt_command () {
   fi
 
   # set the prompts
-  PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]${BRANCH_DISP}$ $txtrst"
+  PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]${BRANCH_DISP}$ $txtrst"
   PS2='> '
   PS4='+ '
 }
