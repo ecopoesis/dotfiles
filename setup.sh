@@ -35,3 +35,16 @@ for FILE in ${DIR}/*; do
         rm -rf ~/.${BASE} && ln -s ${FILE} ~/.${BASE}
     fi
 done
+
+if [[ `uname` == 'Darwin' ]]; then
+  # MacOS
+  FONT_DIR="${HOME}/Library/Fonts"
+else
+  # Linux
+  FONT_DIR="${HOME}/.local/share/fonts"
+  mkdir -p ${FONT_DIR}
+fi
+
+echo "Copying fonts..."
+cp ${DIR}/fonts/* ${FONT_DIR}
+
