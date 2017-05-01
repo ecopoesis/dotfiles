@@ -23,7 +23,7 @@ mkdir -p ${OLD}
 # move any existing dotfiles in homedir to dotfiles/old directory, then create symlinks
 for FILE in ${DIR}/*; do
     # skip *.sh files and README.md
-    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]]; then
+    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]] && [[ ! ${FILE} == *mac ]] ; then
         BASE=`echo ${FILE} | cut -c ${LEN}-`
 
         if [ -f ${BASE} ]; then
@@ -48,3 +48,7 @@ fi
 echo "Copying fonts..."
 cp ${DIR}/fonts/* ${FONT_DIR}
 
+# setup Mac desktop specific stuff
+if [[ `uname` == 'Darwin' ]]; then
+  rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && ln -s ${DIR}/mac/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
+fi
