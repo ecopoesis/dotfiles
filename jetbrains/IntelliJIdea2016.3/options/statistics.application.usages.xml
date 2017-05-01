@@ -1,0 +1,363 @@
+<application>
+  <component name="StatisticsApplicationUsages">
+    <group name="file-type">
+      <project id="salsify_gem" values="Git file,YAML,PLAIN_TEXT,Bash,Ruby,Markdown" collectionTime="1490725312495" />
+      <project id="zeus-statemachine" values="UNKNOWN,SourceMap,CSS,PLAIN_TEXT,Images,HTML,JavaScript,Markdown,XML,ESLint,YAML,JSON" collectionTime="1490646240548" />
+      <project id="ui-user-tracking" values="JavaScript,YAML,CSS,Markdown,XML,Npm file,ESLint file,SourceMap,UNKNOWN,HTML,PLAIN_TEXT,Git file,JSON" collectionTime="1490193987623" />
+      <project id="avro-schema-registry" values="HTML,Ruby,RbenvGemsets,Markdown,Git file,UNKNOWN,YAML,CSS,Images,PLAIN_TEXT,JSON,RHTML" collectionTime="1487964402098" />
+      <project id="carrot-connector" values="Markdown,YAML,PLAIN_TEXT,IDEA_MODULE,Ruby,Git file" collectionTime="1486046959331" />
+      <project id="docker-elasticsearch" values="YAML,Dockerfile,Markdown,Git file,Docker file" collectionTime="1488210236863" />
+      <project id="dandy-1000" values="YAML,RHTML,Ruby,UNKNOWN,CSS,HTML,Markdown,Git file,JavaScript,IDEA_MODULE,PLAIN_TEXT,Images" collectionTime="1482870712181" />
+      <project id="docker-jnlp-slave" values="Dockerfile,Markdown,Bash,IDEA_MODULE" collectionTime="1490983591914" />
+      <project id="omniauth_salsify" values="Markdown,IDEA_MODULE,Git file,Ruby" collectionTime="1482875937115" />
+      <project id="alerts-service" values="IDEA_MODULE,Markdown,CSS,Git file,YAML,RbenvGemsets,UNKNOWN,JSON,HTML,Bash,PLAIN_TEXT,RHTML,Images,Ruby,SQL,JavaScript" collectionTime="1487964408236" />
+      <project id="docker-jenkins-slave-ecs" values="PLAIN_TEXT,Markdown,Docker file,Dockerfile,IDEA_MODULE,Git file" collectionTime="1490995024507" />
+      <project id="dandelion" values="Less,XML,Images,UNKNOWN,JavaScript,Git file,HTML,RbenvGemsets,Bash,CSS,YAML,Native,SQL,ESLint,PLAIN_TEXT,ARCHIVE,Dockerfile,SourceMap,Docker file,RHTML,SCSS,JSHint,ESLint file,Ruby,JSON,Handlebars/Mustache,IDEA_MODULE,Markdown,Npm file" collectionTime="1491488178951" />
+      <project id="content-review" values="XML,CSS,RHTML,SQL,Bash,JSCS,SCSS,TypeScript,JSON,JavaScript,IDEA_MODULE,Git file,YAML,Less,SourceMap,JSHint,Markdown,Npm file,Ruby,PLAIN_TEXT,HTML,UNKNOWN,CoffeeScript,Images,RbenvGemsets" collectionTime="1490390217822" />
+      <project id="cloudops" values="Bash,Markdown,UNKNOWN,JSON,ARCHIVE,PLAIN_TEXT,Ruby,Git file" collectionTime="1484334806452" />
+      <project id="zeus" values="JSON,IDEA_MODULE,JavaScript,Markdown,PLAIN_TEXT,RHTML,UNKNOWN,SQL,RbenvGemsets,XML,Ruby,CSS,Git file,Images,SCSS,HTML,YAML" collectionTime="1491254358385" />
+      <project id="email-service" values="RbenvGemsets,RHTML,Ruby,SQL,UNKNOWN,Git file,JavaScript,PLAIN_TEXT,Images,YAML,HTML,Markdown,CSS,JSON" collectionTime="1487283857599" />
+      <project id="salsify-ruby" values="PLAIN_TEXT,YAML,Ruby,Markdown,Git file" collectionTime="1490908630956" />
+      <project id="peter-gabriel" values="PLAIN_TEXT,Markdown,IDEA_MODULE,Native,Ruby,RHTML,Git file,JSON,RbenvGemsets" collectionTime="1491254360453" />
+    </group>
+    <group name="ruby-project-type">
+      <project id="omniauth_salsify" values="gem" collectionTime="1482875937233" />
+      <project id="zeus" values="rails 4.2" collectionTime="1491254358399" />
+      <project id="dandelion" values="rails 4.1" collectionTime="1491488179122" />
+      <project id="alerts-service" values="rails 4.2" collectionTime="1487964408288" />
+      <project id="carrot-connector" values="gem" collectionTime="1486046959338" />
+      <project id="peter-gabriel" values="plain ruby" collectionTime="1491254360457" />
+      <project id="content-review" values="rails 4.2" collectionTime="1490390217865" />
+      <project id="dandy-1000" values="rails 4.2" collectionTime="1482870712204" />
+    </group>
+    <group name="images.ide.background">
+      <project id="salsify_gem" values="editor 0,frame 0" collectionTime="1490725312497" />
+      <project id="zeus-statemachine" values="editor 0,frame 0" collectionTime="1490646240548" />
+      <project id="ui-user-tracking" values="frame 0,editor 0" collectionTime="1490193987625" />
+      <project id="avro-schema-registry" values="frame 0,editor 0" collectionTime="1487964402099" />
+      <project id="carrot-connector" values="frame 0,editor 0" collectionTime="1486046959333" />
+      <project id="docker-elasticsearch" values="editor 0,frame 0" collectionTime="1488210236865" />
+      <project id="dandy-1000" values="editor 0,frame 0" collectionTime="1482870712195" />
+      <project id="docker-jnlp-slave" values="editor 0,frame 0" collectionTime="1490983591914" />
+      <project id="omniauth_salsify" values="editor 0,frame 0" collectionTime="1482875937116" />
+      <project id="alerts-service" values="frame 0,editor 0" collectionTime="1487964408275" />
+      <project id="docker-jenkins-slave-ecs" values="frame 0,editor 0" collectionTime="1490995024507" />
+      <project id="dandelion" values="frame=0,editor=0" collectionTime="1491488179040" />
+      <project id="content-review" values="editor 0,frame 0" collectionTime="1490390217854" />
+      <project id="cloudops" values="frame 0,editor 0" collectionTime="1484334806452" />
+      <project id="zeus" values="editor 0,frame 0" collectionTime="1491254358396" />
+      <project id="email-service" values="editor 0,frame 0" collectionTime="1487283857599" />
+      <project id="salsify-ruby" values="editor 0,frame 0" collectionTime="1490908630957" />
+      <project id="peter-gabriel" values="editor 0,frame 0" collectionTime="1491254360453" />
+    </group>
+    <group name="ruby-not-empty-gemsets">
+      <project id="salsify_gem" values="rbenv 0.0,rvm 2.3" collectionTime="1490725313014" />
+      <project id="zeus-statemachine" values="rbenv 0.0,rvm 2.3" collectionTime="1490646240554" />
+      <project id="ui-user-tracking" values="rvm 2.3,rbenv 0.0" collectionTime="1490193987750" />
+      <project id="avro-schema-registry" values="rvm 2.3,rbenv 0.0" collectionTime="1487964402268" />
+      <project id="carrot-connector" values="rvm 2.0,rbenv 0.0" collectionTime="1486046959339" />
+      <project id="docker-elasticsearch" values="rvm 2.3,rbenv 0.0" collectionTime="1488210237003" />
+      <project id="dandy-1000" values="rvm 1.1,rbenv 0.0" collectionTime="1482870712206" />
+      <project id="docker-jnlp-slave" values="rvm 2.3,rbenv 0.0" collectionTime="1490983591925" />
+      <project id="omniauth_salsify" values="rvm 1.1,rbenv 0.0" collectionTime="1482875937242" />
+      <project id="alerts-service" values="rvm 2.3,rbenv 0.0" collectionTime="1487964408291" />
+      <project id="docker-jenkins-slave-ecs" values="rvm 2.3,rbenv 0.0" collectionTime="1490995024523" />
+      <project id="dandelion" values="rvm 2.3,rbenv 0.0" collectionTime="1491488179132" />
+      <project id="content-review" values="rvm 2.3,rbenv 0.0" collectionTime="1490390217868" />
+      <project id="cloudops" values="rvm 1.9,rbenv 0.0" collectionTime="1484334806456" />
+      <project id="zeus" values="rvm 2.3,rbenv 0.0" collectionTime="1491254358401" />
+      <project id="email-service" values="rvm 2.3,rbenv 0.0" collectionTime="1487283857611" />
+      <project id="salsify-ruby" values="rvm 2.3,rbenv 0.0" collectionTime="1490908630965" />
+      <project id="peter-gabriel" values="rvm 2.3,rbenv 0.0" collectionTime="1491254360459" />
+    </group>
+    <group name="frameworks">
+      <project id="zeus" values="RailsFacetType" collectionTime="1491254358382" />
+      <project id="dandelion" values="RailsFacetType" collectionTime="1491488178938" />
+      <project id="alerts-service" values="RailsFacetType" collectionTime="1487964408219" />
+      <project id="carrot-connector" values="gem" collectionTime="1486046959329" />
+      <project id="content-review" values="RailsFacetType,gem" collectionTime="1490390217765" />
+      <project id="dandy-1000" values="RailsFacetType" collectionTime="1482870712153" />
+    </group>
+    <group name="vcs">
+      <project id="ui-user-tracking" values="Git" collectionTime="1490193987604" />
+      <project id="avro-schema-registry" values="Git" collectionTime="1487964402043" />
+      <project id="dandelion" values="Git" collectionTime="1491488178938" />
+      <project id="docker-elasticsearch" values="Git" collectionTime="1488210236847" />
+      <project id="dandy-1000" values="Git" collectionTime="1482870712153" />
+      <project id="docker-jnlp-slave" values="Git" collectionTime="1490983591905" />
+      <project id="alerts-service" values="Git" collectionTime="1487964408219" />
+      <project id="email-service" values="Git" collectionTime="1487283857595" />
+      <project id="cloudops" values="Git" collectionTime="1484334806451" />
+      <project id="omniauth_salsify" values="Git" collectionTime="1482875937055" />
+      <project id="content-review" values="Git" collectionTime="1490390217764" />
+      <project id="zeus" values="Git" collectionTime="1491254358382" />
+      <project id="carrot-connector" values="Git" collectionTime="1486046959329" />
+      <project id="salsify_gem" values="Git" collectionTime="1490725312458" />
+      <project id="salsify-ruby" values="Git" collectionTime="1490908630949" />
+      <project id="peter-gabriel" values="Git" collectionTime="1491254360449" />
+    </group>
+    <group name="ruby-gemsets-7/8-percentile">
+      <project id="salsify_gem" values="rvm 3" collectionTime="1490725312952" />
+      <project id="zeus-statemachine" values="rvm 3" collectionTime="1490646240552" />
+      <project id="ui-user-tracking" values="rvm 3" collectionTime="1490193987735" />
+      <project id="avro-schema-registry" values="rvm 3" collectionTime="1487964402254" />
+      <project id="carrot-connector" values="rvm 3" collectionTime="1486046959338" />
+      <project id="docker-elasticsearch" values="rvm 3" collectionTime="1488210236988" />
+      <project id="dandy-1000" values="rvm 1" collectionTime="1482870712205" />
+      <project id="docker-jnlp-slave" values="rvm 3" collectionTime="1490983591921" />
+      <project id="omniauth_salsify" values="rvm 1" collectionTime="1482875937235" />
+      <project id="alerts-service" values="rvm 3" collectionTime="1487964408288" />
+      <project id="docker-jenkins-slave-ecs" values="rvm 3" collectionTime="1490995024515" />
+      <project id="dandelion" values="rvm 3" collectionTime="1491488179123" />
+      <project id="content-review" values="rvm 3" collectionTime="1490390217865" />
+      <project id="cloudops" values="rvm 3" collectionTime="1484334806455" />
+      <project id="zeus" values="rvm 3" collectionTime="1491254358399" />
+      <project id="email-service" values="rvm 3" collectionTime="1487283857604" />
+      <project id="salsify-ruby" values="rvm 3" collectionTime="1490908630963" />
+      <project id="peter-gabriel" values="rvm 3" collectionTime="1491254360457" />
+    </group>
+    <group name="run-configuration-type-temp">
+      <project id="zeus" values="RSpecRunConfigurationType" collectionTime="1491254358382" />
+      <project id="dandelion" values="IrbRunConfigurationType,RSpecRunConfigurationType" collectionTime="1491488178939" />
+      <project id="ui-user-tracking" values="NodeJSConfigurationType" collectionTime="1490193987605" />
+      <project id="carrot-connector" values="TestUnitRunConfigurationType" collectionTime="1486046959329" />
+      <project id="content-review" values="TestUnitRunConfigurationType,NodeJSConfigurationType,RSpecRunConfigurationType" collectionTime="1490390217765" />
+      <project id="dandy-1000" values="RSpecRunConfigurationType" collectionTime="1482870712153" />
+    </group>
+    <group name="ruby-sdk-version">
+      <project id="zeus" values="ruby-2.3.0" collectionTime="1491254358399" />
+      <project id="dandelion" values="ruby-2.3.3" collectionTime="1491488179121" />
+      <project id="alerts-service" values="ruby-2.3.3" collectionTime="1487964408287" />
+      <project id="carrot-connector" values="ruby-2.2.3" collectionTime="1486046959338" />
+      <project id="peter-gabriel" values="ruby-2.4.0" collectionTime="1491254360457" />
+      <project id="content-review" values="ruby-2.3.3" collectionTime="1490390217863" />
+      <project id="dandy-1000" values="ruby-2.2.2" collectionTime="1482870712204" />
+    </group>
+    <group name="VCS Log 2">
+      <project id="omniauth_salsify" values="data.commit.count.1+,data.git.root.count.1" collectionTime="1482875937116" />
+      <project id="zeus" values="data.commit.count.1K+,data.branches.count.100+,data.git.root.count.1" collectionTime="1491254358396" />
+      <project id="salsify_gem" values="data.git.root.count.1,data.commit.count.1+,data.branches.count.1+" collectionTime="1490725312497" />
+      <project id="dandelion" values="data.branches.count.500+,data.commit.count.10K+,data.git.root.count.1" collectionTime="1491488179040" />
+      <project id="salsify-ruby" values="data.branches.count.10+,data.git.root.count.1,data.commit.count.100+" collectionTime="1490908630957" />
+      <project id="ui-user-tracking" values="data.commit.count.1+,data.git.root.count.1,data.branches.count.1+" collectionTime="1490193987625" />
+      <project id="content-review" values="data.branches.count.10+,data.git.root.count.1,data.commit.count.100+" collectionTime="1490390217853" />
+      <project id="cloudops" values="data.git.root.count.1,data.commit.count.1+" collectionTime="1484334806452" />
+      <project id="docker-jnlp-slave" values="data.branches.count.1+,data.commit.count.1+,data.git.root.count.1" collectionTime="1490983591914" />
+      <project id="docker-elasticsearch" values="data.commit.count.1+,data.branches.count.1+,data.git.root.count.1" collectionTime="1488210236865" />
+      <project id="peter-gabriel" values="data.git.root.count.1,data.branches.count.1+,data.commit.count.1+" collectionTime="1491254360453" />
+      <project id="email-service" values="data.git.root.count.1,data.commit.count.0,data.branches.count.0" collectionTime="1487283857599" />
+      <project id="dandy-1000" values="data.commit.count.1+,data.git.root.count.1" collectionTime="1482870712195" />
+    </group>
+    <group name="ruby-all-sdks">
+      <project id="salsify_gem" values="8" collectionTime="1490725312950" />
+      <project id="zeus-statemachine" values="8" collectionTime="1490646240552" />
+      <project id="ui-user-tracking" values="8" collectionTime="1490193987734" />
+      <project id="avro-schema-registry" values="8" collectionTime="1487964402253" />
+      <project id="carrot-connector" values="8" collectionTime="1486046959338" />
+      <project id="docker-elasticsearch" values="8" collectionTime="1488210236987" />
+      <project id="dandy-1000" values="8" collectionTime="1482870712204" />
+      <project id="docker-jnlp-slave" values="8" collectionTime="1490983591921" />
+      <project id="omniauth_salsify" values="8" collectionTime="1482875937234" />
+      <project id="alerts-service" values="8" collectionTime="1487964408288" />
+      <project id="docker-jenkins-slave-ecs" values="8" collectionTime="1490995024515" />
+      <project id="dandelion" values="8" collectionTime="1491488179123" />
+      <project id="content-review" values="8" collectionTime="1490390217865" />
+      <project id="cloudops" values="8" collectionTime="1484334806455" />
+      <project id="zeus" values="8" collectionTime="1491254358399" />
+      <project id="email-service" values="8" collectionTime="1487283857604" />
+      <project id="salsify-ruby" values="8" collectionTime="1490908630963" />
+      <project id="peter-gabriel" values="8" collectionTime="1491254360457" />
+    </group>
+    <group name="language-level">
+      <project id="salsify_gem" values="JDK_1_8" collectionTime="1490725312504" />
+      <project id="zeus-statemachine" values="JDK_1_8" collectionTime="1490646240550" />
+      <project id="ui-user-tracking" values="JDK_1_8" collectionTime="1490193987634" />
+      <project id="avro-schema-registry" values="JDK_1_8" collectionTime="1487964402129" />
+      <project id="carrot-connector" values="JDK_1_3" collectionTime="1486046959336" />
+      <project id="docker-elasticsearch" values="JDK_1_8" collectionTime="1488210236873" />
+      <project id="dandy-1000" values="JDK_1_8" collectionTime="1482870712201" />
+      <project id="docker-jnlp-slave" values="JDK_1_8" collectionTime="1490983591918" />
+      <project id="omniauth_salsify" values="JDK_1_8" collectionTime="1482875937119" />
+      <project id="alerts-service" values="JDK_1_3" collectionTime="1487964408284" />
+      <project id="docker-jenkins-slave-ecs" values="JDK_1_8" collectionTime="1490995024510" />
+      <project id="dandelion" values="JDK_1_3" collectionTime="1491488179048" />
+      <project id="content-review" values="JDK_1_3" collectionTime="1490390217860" />
+      <project id="cloudops" values="JDK_1_8" collectionTime="1484334806454" />
+      <project id="zeus" values="JDK_1_3" collectionTime="1491254358398" />
+      <project id="email-service" values="JDK_1_8" collectionTime="1487283857601" />
+      <project id="salsify-ruby" values="JDK_1_8" collectionTime="1490908630961" />
+      <project id="peter-gabriel" values="JDK_1_8" collectionTime="1491254360455" />
+    </group>
+    <group name="Git">
+      <project id="salsify_gem" values="config.warn.about.detached.enabled,data.local.branches.count.1,config.save.policy.STASH,config.force.push.enabled,config.push.autoupdate.disabled,config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,config.cherry-pick.autocommit.disabled,data.remote.branches.count.2+,data.remotes.in.project.1,config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,config.ssh.enabled" collectionTime="1490725312505" />
+      <project id="zeus-statemachine" values="config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,config.force.push.enabled,config.cherry-pick.autocommit.disabled,config.push.autoupdate.disabled,config.save.policy.STASH,config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,config.ssh.enabled" collectionTime="1490646240550" />
+      <project id="ui-user-tracking" values="config.warn.about.detached.enabled,config.force.push.enabled,config.warn.about.crlf.enabled,data.remotes.in.project.1,config.cherry-pick.autocommit.disabled,data.local.branches.count.2+,config.ssh.enabled,config.push.update.all.roots.enabled,config.update.type.BRANCH_DEFAULT,data.remote.branches.count.2+,config.save.policy.STASH,config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled" collectionTime="1490193987635" />
+      <project id="avro-schema-registry" values="config.ssh.enabled,data.local.branches.count.1,config.cherry-pick.autocommit.disabled,config.push.autoupdate.disabled,config.force.push.enabled,config.warn.about.detached.enabled,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled,config.save.policy.STASH,data.remote.branches.count.5+,config.repo.sync.NOT_DECIDED,data.remotes.in.project.1,config.push.update.all.roots.enabled" collectionTime="1487964402132" />
+      <project id="carrot-connector" values="config.warn.about.crlf.enabled,config.push.update.all.roots.enabled,config.push.autoupdate.disabled,config.force.push.enabled,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,data.remotes.in.project.1,data.local.branches.count.2+,config.ssh.enabled,data.remote.branches.count.5+,config.repo.sync.NOT_DECIDED,config.save.policy.STASH,config.warn.about.detached.enabled" collectionTime="1486046959336" />
+      <project id="docker-elasticsearch" values="config.force.push.enabled,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.push.update.all.roots.enabled,config.ssh.enabled,config.warn.about.crlf.enabled,data.local.branches.count.2+,config.warn.about.detached.enabled,data.remotes.in.project.1,config.save.policy.STASH,data.remote.branches.count.2+,config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled" collectionTime="1488210236874" />
+      <project id="dandy-1000" values="data.local.branches.count.2+,data.remote.branches.count.5+,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,data.remotes.in.project.2+,config.push.update.all.roots.enabled,config.save.policy.STASH,config.warn.about.crlf.enabled,config.ssh.enabled,config.warn.about.detached.enabled,config.force.push.enabled,config.push.autoupdate.disabled,config.update.type.BRANCH_DEFAULT" collectionTime="1482870712202" />
+      <project id="docker-jnlp-slave" values="config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.warn.about.crlf.enabled,config.warn.about.detached.enabled,config.force.push.enabled,data.remotes.in.project.1,data.local.branches.count.1,config.ssh.enabled,config.save.policy.STASH,config.push.autoupdate.disabled,config.push.update.all.roots.enabled,config.update.type.BRANCH_DEFAULT,data.remote.branches.count.2+" collectionTime="1490983591918" />
+      <project id="omniauth_salsify" values="config.ssh.enabled,config.force.push.enabled,data.remote.branches.count.1,data.local.branches.count.1,config.push.update.all.roots.enabled,config.warn.about.crlf.enabled,config.save.policy.STASH,config.warn.about.detached.enabled,config.push.autoupdate.disabled,data.remotes.in.project.1,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.update.type.BRANCH_DEFAULT" collectionTime="1482875937119" />
+      <project id="alerts-service" values="config.force.push.enabled,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,config.push.update.all.roots.enabled,config.save.policy.STASH,config.warn.about.detached.enabled,data.remotes.in.project.1,config.repo.sync.NOT_DECIDED,config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled,data.local.branches.count.1,config.ssh.enabled,data.remote.branches.count.5+" collectionTime="1487964408285" />
+      <project id="docker-jenkins-slave-ecs" values="config.save.policy.STASH,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.cherry-pick.autocommit.disabled,config.push.update.all.roots.enabled,config.warn.about.detached.enabled,config.ssh.enabled,config.force.push.enabled" collectionTime="1490995024510" />
+      <project id="dandelion" values="config.push.update.all.roots.enabled,data.remote.branches.count.100+,data.remotes.in.project.2+,config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.ssh.enabled,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,config.warn.about.crlf.enabled,config.warn.about.detached.enabled,config.save.policy.STASH,config.force.push.enabled,data.local.branches.count.15+" collectionTime="1491488179049" />
+      <project id="content-review" values="config.update.type.BRANCH_DEFAULT,config.push.update.all.roots.enabled,config.save.policy.STASH,config.force.push.enabled,config.ssh.enabled,config.repo.sync.NOT_DECIDED,data.local.branches.count.2+,data.remotes.in.project.2+,config.cherry-pick.autocommit.disabled,data.remote.branches.count.8+,config.warn.about.detached.enabled,config.warn.about.crlf.enabled,config.push.autoupdate.disabled" collectionTime="1490390217860" />
+      <project id="cloudops" values="config.update.type.BRANCH_DEFAULT,config.push.autoupdate.disabled,config.save.policy.STASH,config.ssh.enabled,config.force.push.enabled,config.warn.about.detached.enabled,config.warn.about.crlf.enabled,config.cherry-pick.autocommit.disabled,config.repo.sync.NOT_DECIDED,config.push.update.all.roots.enabled,data.local.branches.count.2+,data.remote.branches.count.2+,data.remotes.in.project.1" collectionTime="1484334806454" />
+      <project id="zeus" values="config.ssh.enabled,config.warn.about.crlf.enabled,data.remote.branches.count.100+,config.warn.about.detached.enabled,config.push.autoupdate.disabled,data.local.branches.count.15+,config.force.push.enabled,config.push.update.all.roots.enabled,config.repo.sync.NOT_DECIDED,config.update.type.BRANCH_DEFAULT,config.save.policy.STASH,config.cherry-pick.autocommit.disabled,data.remotes.in.project.2+" collectionTime="1491254358398" />
+      <project id="email-service" values="config.force.push.enabled,data.remotes.in.project.0,config.push.update.all.roots.enabled,data.local.branches.count.0,config.push.autoupdate.disabled,config.ssh.enabled,config.warn.about.crlf.enabled,config.repo.sync.NOT_DECIDED,data.remote.branches.count.0,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,config.warn.about.detached.enabled,config.save.policy.STASH" collectionTime="1487283857601" />
+      <project id="salsify-ruby" values="config.push.autoupdate.disabled,config.repo.sync.NOT_DECIDED,config.push.update.all.roots.enabled,config.warn.about.crlf.enabled,data.remotes.in.project.1,config.ssh.enabled,config.warn.about.detached.enabled,config.force.push.enabled,data.local.branches.count.2+,config.update.type.BRANCH_DEFAULT,config.cherry-pick.autocommit.disabled,config.save.policy.STASH,data.remote.branches.count.15+" collectionTime="1490908630962" />
+      <project id="peter-gabriel" values="config.cherry-pick.autocommit.disabled,config.save.policy.STASH,data.remotes.in.project.1,config.force.push.enabled,config.ssh.enabled,config.push.update.all.roots.enabled,data.remote.branches.count.1,config.update.type.BRANCH_DEFAULT,config.warn.about.crlf.enabled,config.warn.about.detached.enabled,config.repo.sync.NOT_DECIDED,config.push.autoupdate.disabled,data.local.branches.count.1" collectionTime="1491254360455" />
+    </group>
+    <group name="ruby-gems-names">
+      <project id="zeus" values="capybara,excon,rack,delayed_job_groups_plugin,autoprefixer-rails,jbuilder,tzinfo,bootstrap-sass,rubocop-rspec,crack,mime-types,activesupport,rake,loofah,nokogiri,i18n,web-console,active_model_serializers,foreman,webmock,salsify_rubocop,iniparse,oj,roo,rails_multitenant,launchy,salsify,rspec-core,builder,postmark,domain_name,childprocess,unf_ext,aws-sdk-core,hirefire-resource,rails-dom-testing,thread_safe,amadeus,private_attr,activemodel,erubis,diff-lcs,globalid,rspec-expectations,sass-rails,tilt,rails_12factor,rails-deprecated_sanitizer,unf,rails_serve_static_assets,rspec-its,jquery-rails,will_paginate,delayed_job,railties,rainbow,sass,mail,rspec-mocks,sprockets-rails,actionmailer,rspec,debug_inspector,rubyzip,multi_xml,oauth2,rspec_junit_formatter,binding_of_caller,overcommit,rspec-support,unicode-display_width,jwt,platform-api,vcr,net-http-report,factory_girl_rails,ast,activerecord-import,rails,jmespath,protected_attributes,bundler,factory_girl,with_advisory_lock,mini_portile2,rails-html-sanitizer,goldiloader,safe_yaml,newrelic_rpm,sprockets,spring,ice_nine,service-security,rack-jwt-auth,ffi,rails_stdout_logging,json-schema,omniauth,rest-client,dotenv-rails,netrc,aws-sigv4,concurrent-ruby,omniauth-oauth2,pg,json_spec,rspec-rails,docile,turbolinks-source,moneta,actionpack,public_suffix,omniauth_salsify,symbolize,powerpack,simplecov-html,aws-sdk,thor,parser,minitest,heroics,json,annotate,rubocop,ruby-progressbar,simplecov,retries,rack-test,font-awesome-sass,execjs,activerecord,omniauth-google-oauth2,bugsnag,hashie,xpath,delayed_job_worker_pool,awesome_print,hashdiff,activerecord-extensions,uglifier,faraday,heroku-api,actionview,multipart-post,turbolinks,database_cleaner,arel,delayed_job_active_record,puma,http-cookie,aws-sdk-resources,dotenv,multi_json,activejob,addressable" collectionTime="1491254358399" />
+      <project id="dandelion" values="ice_nine,redis,rspec-rails,responders,ruby-kafka,jsonpath,sinatra,activerecord-import,jmespath,virtus,slack-notifier,httpi,griddler-postmark,json,diff-lcs,spring-commands-rspec,procto,rack-proxy,service-security,rails_12factor,nori,email_spec,simplecov-html,griddler,hike,order_query,database_cleaner,non-stupid-digest-assets,ipaddress,dandelion_schemas,equivalent-xml,salsify_request_logger,doorkeeper,railties,fog-core,numerizer,dotenv-rails,parallel_tests,rainbow,charlock_holmes,parslet,websocket-extensions,activerecord-extensions,digest-murmurhash,multi_json,savon,signature,fog-json,dotenv,concurrent-ruby,public_suffix,httparty,autoprefixer-rails,paper_trail,factory_girl_rails,amq-protocol,pg_array_parser,settingslogic,websocket-driver,rails_serve_static_assets,blankslate,unf_ext,cookiejar,eventmachine,nokogumbo,metrics_reporter,faraday_middleware,rack-timeout,ruby-progressbar,activesupport,omniauth-multi-provider,mime-types,active_record_union,activerecord,rack-test,iterator,avro-builder,video_info,rails,mrkt,elasticsearch-api,omniauth-oauth2,license_finder,em-websocket,rubocop-rspec,actionview,delayed_job_active_record,rspec-its,mail,orm_adapter,parser,with_model,capybara-screenshot,elasticsearch-transport,with_advisory_lock,faraday,climate_control,timecop,asset_sync,json_pure,elasticsearch,rubyzip,sprockets-rails,hitimes,exception_reporter,crack,puma,analytics-ruby,salsify_gem,rake,launchy,aws-sdk-resources,activemodel,wasabi,foreman,spring,aasm,newrelic_rpm,avl_tree,addressable,http_parser.rb,rendezvous,hirefire-resource,safe_yaml,rack-throttle,coercible,roo,builder,multipart-post,oga,i18n,powerpack,msgpack,http-cookie,cloudinary,atomic,curb,sanitize,active_model_serializers,oj,delayed_job_groups_plugin,macaddr,bundler,tilt,crass,execjs,rack,actionpack,avro,json_spec,rack-protection,nokogiri,unicode-display_width,shoulda-matchers,test-unit,unf,codeclimate-test-reporter,fakes3,em-socksify,filepicker-rails,net-sftp,omniauth-saml,webmock,xpath,net-http-report,avro_turf,mini_portile2,find_as_hashes,em-http-request,fog-brightbox,pusher-fake,devise_invitable,pusher,daemons,arel,ruby-saml,rspec-collection_matchers,iniparse,delayed_job,erubis,rufus-scheduler,postgres_ext,avromatic,salsify_clockwork,tzinfo,cancancan,sass-rails,salsify_rubocop,simplecov,pg,power_assert,sprockets,browser,htmlentities,fuubar,goldiloader,inflecto,will_paginate,overcommit,sass,encryptor,avro-resolution_canonical_form,rspec_junit_formatter,bugsnag,thread_safe,childprocess,minitest,json_models,salsify_avro,ast,bcrypt,axiom-types,xml-simple,db-query-matchers,docile,colorize,rest-client,hstore_accessor,postgresql_cursor,heroics,ffi,chronic_duration,delayed_job_worker_pool,multi_xml,webhook_schemas,ethon,rails_multitenant,parallel,jwt,excon,netrc,state_machines,multimap,rspec-core,docker-api,clockwork,uuid,rspec-activemodel-mocks,net-ssh,descendants_tracker,aws-sdk,gyoku,typhoeus,protected_attributes,thin,cocaine,hooks,aws_cf_signer,attr_encrypted,metriks,ansi,hashie,naught,salsify_kafka,httpclient,iso8601,open_uri_redirections,rspec-mocks,delayed_job_heartbeat_plugin,rails_stdout_logging,closure_tree,securecompare,capybara,rspec-support,cliver,metriks-librato_metrics,fog,equalizer,omniauth-google-oauth2,oauth2,platform-api,ruby-ll,private_attr,formatador,warden,thor,uber,rubocop,poltergeist,moneta,circuit_breaker,eigenclass,factory_girl,awesome_print,rspec-expectations,symbolize,omniauth,spring-commands-rubocop,deep_cloneable,acts_as_list,rspec,axlsx,bunny,rspec-retry,akami,aws-sdk-core,devise,net-scp,fivemat,ref,actionmailer,delayed-job-extensions,concurrent-ruby-ext,systemu,domain_name" collectionTime="1491488179122" />
+      <project id="alerts-service" values="grape,spring-commands-rspec,pkg-config,ice_nine,hashie-forbidden_attributes,rspec-support,sprockets,avro-builder,salsify_avro,ruby-progressbar,grape-entity,rspec-collection_matchers,avro,json_spec,rspec,http-cookie,domain_name,unf_ext,childprocess,webmock,loofah,encryptor,database_cleaner,factory_girl_rails,jwt,activerecord,actionview,tilt,spring-watcher-listen,safe_yaml,docile,postgresql_cursor,rails_12factor,puma,concurrent-ruby,rb-inotify,validate_url,timecop,rspec-mocks,salsify_clockwork,simplecov-html,mustermann-grape,crack,mime-types,delayed_job_active_record,bundler,salsify_grape,rails_serve_static_assets,mustermann,rest-client,rails-api,activesupport,rspec-its,axiom-types,coercible,avro-salsify-fork,rails_multitenant,activemodel,rack-jwt-auth,ffi,equalizer,globalid,rspec-rails,descendants_tracker,jsonapi,codeclimate-test-reporter,nokogiri,rails-html-sanitizer,postmark,rack-accept,actionmailer,mime-types-data,newrelic_rpm,rails_stdout_logging,will_paginate,rspec-expectations,procto,annotate,powerpack,pg,ruby_dep,foreman,rack-test,grape-swagger,exception_reporter,addressable,hashie,sinatra,ast,unf,spring-commands-rubocop,abstract_method,overcommit,postmark-rails,rb-fsevent,rails-dom-testing,thor,bugsnag,railties,with_advisory_lock,thread_safe,simplecov,dotenv,delayed_job,rails,docker-api,rspec-core,factory_girl,multi_json,grape-entity-matchers,private_attr,grape-swagger-rails,diff-lcs,minitest,spring,actionpack,multi_xml,virtus,grape-swagger-entity,tzinfo,dotenv-rails,rails-deprecated_sanitizer,netrc,activejob,rack,clockwork,mini_portile2,active_model_serializers,rspec_junit_formatter,iniparse,erubis,rack-protection,parser,mail,tool,attr_encrypted,enumerize,listen,sprockets-rails,hashdiff,shoulda-matchers,rake" collectionTime="1487964408288" />
+      <project id="carrot-connector" values="i18n,bunny,rubocop,ast,rspec,diff-lcs,ruby-progressbar,minitest,builder,iniparse,rspec-expectations,ice_nine,tzinfo,bundler,childprocess,amq-protocol,rake,rubocop-rspec,unicode-display_width,rspec_junit_formatter,rainbow,thread_safe,ethon,powerpack,rspec-support,overcommit,parser,concurrent-ruby,salsify_rubocop,typhoeus,rspec-mocks,activesupport,thor,rspec-core,ffi,salsify_gem" collectionTime="1486046959338" />
+      <project id="peter-gabriel" values="dotenv,bundler" collectionTime="1491254360457" />
+      <project id="content-review" values="rspec,pry-rails,axiom-types,hashdiff,rails-html-sanitizer,capybara,parser,rack-cors,rack-timeout,websocket-extensions,webmock,timecop,binding_of_caller,vcr,diff-lcs,sass,formatador,i18n,ice_nine,has_scope,colorize,rack-test,rb-inotify,launchy,dotenv-rails,pg,minitest,sprockets-rails,jquery-rails,safe_yaml,omniauth-google-oauth2,polyamorous,builder,rspec_junit_formatter,mail,rspec-collection_matchers,lumberjack,database_cleaner,slop,ruby-progressbar,net-http-report,bundler,rack,iniparse,rspec-rails,bugsnag,with_advisory_lock,pry-byebug,nenv,actionview,hashie,loofah,debug_inspector,puma,omniauth_salsify,jwt,multipart-post,oauth2,omniauth,dotenv,descendants_tracker,concurrent-ruby,pry,formtastic_i18n,rainbow,addressable,unicode-display_width,factory_girl_rails,netrc,erubis,listen,httplog,salsify_rubocop,rake,encryptor,overcommit,websocket-driver,rubocop-rspec,method_source,foreman,activeadmin,sass-rails,kaminari,faraday,crack,factory_girl,activesupport,formulaic,tzinfo,coco,coercible,require_all,angular_csrf,childprocess,guard-rubocop,nokogiri,attr_encrypted,awesome_print,rails_multitenant,will_paginate,rspec-retry,jbuilder,omniauth-oauth2,amq-protocol,capybara-screenshot,powerpack,rspec-expectations,ransack,guard,bourbon,xpath,ast,poltergeist,rspec-core,virtus,virtus-group,globalid,rack_session_access,ruby_dep,rspec-mocks,multi_xml,public_suffix,rails_12factor,multi_json,sprockets,formtastic,rspec-matcher-num-times,goldiloader,thor,execjs,tilt,actionmailer,uglifier,service-security,json,notiffany,rubocop,byebug,shellany,bunny,salsify,cliver,carrot-connector,guard-compat,rails-deprecated_sanitizer,coffee-rails,thread_safe,railties,activerecord-extensions,rb-fsevent,dentaku,guard-rspec,activejob,equalizer,inherited_resources,ethon,arel,shoulda-matchers,coffee-script,jquery-ui-rails,coderay,actionpack,domain_name,responders,web-console,mime-types,unf,coffee-script-source,newrelic_rpm,http-cookie,filesize,activemodel,rails,rails_serve_static_assets,mini_portile2,activerecord-import,typhoeus,activerecord,rspec-support,rails-dom-testing,rest-client,unf_ext,arbre,rails_stdout_logging,ffi" collectionTime="1490390217865" />
+      <project id="dandy-1000" values="puma,globalid,overcommit,dotenv-rails,unf_ext,attr_encrypted,ast,multipart-post,sass-rails,rspec-support,uglifier,rails_serve_static_assets,execjs,multi_json,omniauth,mini_portile,tilt,rails-deprecated_sanitizer,actionview,mono_logger,resque-retry,sprockets-rails,tzinfo,activemodel,jquery-rails,pry,parser,rspec-mocks,actionpack,jwt,thor,rails-html-sanitizer,unf,vegas,bugsnag,rufus-scheduler,newrelic_rpm,coderay,diff-lcs,rails-dom-testing,redis,netrc,method_source,rainbow,json,activesupport,http-cookie,sprockets,i18n,faraday,iniparse,oauth2,activejob,nokogiri,domain_name,activerecord-import,rails_multitenant,sinatra,ffi,hashie,rubocop-rspec,rack-protection,salsify_rubocop,mime-types,rspec-rails,rails,rest-client,resque-workers-lock,rspec-core,erubis,activerecord,childprocess,rails_12factor,foreman,powerpack,bundler,with_advisory_lock,shoulda-matchers,unicode-display_width,minitest,builder,factory_girl,actionmailer,arel,rack-test,redis-namespace,factory_girl_rails,ruby-progressbar,pry-rails,activerecord-extensions,rack,thread_safe,sass,rails_stdout_logging,dotenv,rspec-expectations,loofah,omniauth-oauth2,omniauth_salsify,mail,railties,encryptor,rubocop,resque,resque-scheduler,pg,multi_xml,slop" collectionTime="1482870712204" />
+    </group>
+    <group name="javaScript Scope Usages">
+      <project id="salsify_gem" values="Project,Project" collectionTime="1490725312916" />
+      <project id="zeus-statemachine" values="Project,Project" collectionTime="1490646240551" />
+      <project id="ui-user-tracking" values="Project,Project,Project,Directory" collectionTime="1490193987723" />
+      <project id="avro-schema-registry" values="Project,Project" collectionTime="1487964402218" />
+      <project id="carrot-connector" values="Project,Project" collectionTime="1486046959337" />
+      <project id="docker-elasticsearch" values="Project,Project" collectionTime="1488210236976" />
+      <project id="dandy-1000" values="Project,Project" collectionTime="1482870712203" />
+      <project id="docker-jnlp-slave" values="Project,Project" collectionTime="1490983591920" />
+      <project id="omniauth_salsify" values="Project,Project" collectionTime="1482875937222" />
+      <project id="alerts-service" values="Project,Project" collectionTime="1487964408285" />
+      <project id="docker-jenkins-slave-ecs" values="Project,Project" collectionTime="1490995024514" />
+      <project id="dandelion" values="Directory,Directory,Directory,Project,Directory,Project,Project" collectionTime="1491488179113" />
+      <project id="content-review" values="Directory,Directory,Project,Project" collectionTime="1490390217861" />
+      <project id="cloudops" values="Project,Project" collectionTime="1484334806454" />
+      <project id="zeus" values="Project,Directory,Project" collectionTime="1491254358398" />
+      <project id="email-service" values="Project,Project" collectionTime="1487283857603" />
+      <project id="salsify-ruby" values="Project,Project" collectionTime="1490908630962" />
+      <project id="peter-gabriel" values="Project,Project" collectionTime="1491254360456" />
+    </group>
+    <group name="ruby-version-managers">
+      <project id="salsify_gem" values="rvm" collectionTime="1490725312950" />
+      <project id="zeus-statemachine" values="rvm" collectionTime="1490646240552" />
+      <project id="ui-user-tracking" values="rvm" collectionTime="1490193987734" />
+      <project id="avro-schema-registry" values="rvm" collectionTime="1487964402253" />
+      <project id="carrot-connector" values="rvm" collectionTime="1486046959338" />
+      <project id="docker-elasticsearch" values="rvm" collectionTime="1488210236987" />
+      <project id="dandy-1000" values="rvm" collectionTime="1482870712204" />
+      <project id="docker-jnlp-slave" values="rvm" collectionTime="1490983591921" />
+      <project id="omniauth_salsify" values="rvm" collectionTime="1482875937234" />
+      <project id="alerts-service" values="rvm" collectionTime="1487964408288" />
+      <project id="docker-jenkins-slave-ecs" values="rvm" collectionTime="1490995024515" />
+      <project id="dandelion" values="rvm" collectionTime="1491488179123" />
+      <project id="content-review" values="rvm" collectionTime="1490390217865" />
+      <project id="cloudops" values="rvm" collectionTime="1484334806455" />
+      <project id="zeus" values="rvm" collectionTime="1491254358399" />
+      <project id="email-service" values="rvm" collectionTime="1487283857604" />
+      <project id="salsify-ruby" values="rvm" collectionTime="1490908630963" />
+      <project id="peter-gabriel" values="rvm" collectionTime="1491254360457" />
+    </group>
+    <group name="module type">
+      <project id="salsify_gem" values="JAVA_MODULE" collectionTime="1490725312458" />
+      <project id="zeus-statemachine" values="JAVA_MODULE" collectionTime="1490646240541" />
+      <project id="ui-user-tracking" values="JAVA_MODULE" collectionTime="1490193987605" />
+      <project id="avro-schema-registry" values="JAVA_MODULE" collectionTime="1487964402044" />
+      <project id="carrot-connector" values="RUBY_MODULE" collectionTime="1486046959329" />
+      <project id="docker-elasticsearch" values="JAVA_MODULE" collectionTime="1488210236847" />
+      <project id="dandy-1000" values="RUBY_MODULE" collectionTime="1482870712153" />
+      <project id="docker-jnlp-slave" values="WEB_MODULE" collectionTime="1490983591905" />
+      <project id="omniauth_salsify" values="RUBY_MODULE" collectionTime="1482875937055" />
+      <project id="alerts-service" values="RUBY_MODULE" collectionTime="1487964408219" />
+      <project id="docker-jenkins-slave-ecs" values="WEB_MODULE" collectionTime="1490995024499" />
+      <project id="dandelion" values="RUBY_MODULE" collectionTime="1491488178938" />
+      <project id="content-review" values="RUBY_MODULE" collectionTime="1490390217765" />
+      <project id="cloudops" values="JAVA_MODULE" collectionTime="1484334806451" />
+      <project id="zeus" values="RUBY_MODULE" collectionTime="1491254358382" />
+      <project id="email-service" values="JAVA_MODULE" collectionTime="1487283857595" />
+      <project id="salsify-ruby" values="JAVA_MODULE" collectionTime="1490908630949" />
+      <project id="peter-gabriel" values="RUBY_MODULE" collectionTime="1491254360449" />
+    </group>
+    <group name="JavaScript versions">
+      <project id="salsify_gem" values="ECMAScript 5.1" collectionTime="1490725312916" />
+      <project id="zeus-statemachine" values="ECMAScript 5.1" collectionTime="1490646240551" />
+      <project id="ui-user-tracking" values="ECMAScript 6" collectionTime="1490193987723" />
+      <project id="avro-schema-registry" values="ECMAScript 5.1" collectionTime="1487964402218" />
+      <project id="carrot-connector" values="ECMAScript 5.1" collectionTime="1486046959337" />
+      <project id="docker-elasticsearch" values="ECMAScript 5.1" collectionTime="1488210236976" />
+      <project id="dandy-1000" values="ECMAScript 5.1" collectionTime="1482870712203" />
+      <project id="docker-jnlp-slave" values="ECMAScript 5.1" collectionTime="1490983591920" />
+      <project id="omniauth_salsify" values="ECMAScript 5.1" collectionTime="1482875937222" />
+      <project id="alerts-service" values="ECMAScript 5.1" collectionTime="1487964408285" />
+      <project id="docker-jenkins-slave-ecs" values="ECMAScript 5.1" collectionTime="1490995024514" />
+      <project id="dandelion" values="ECMAScript 6" collectionTime="1491488179113" />
+      <project id="content-review" values="ECMAScript 5.1" collectionTime="1490390217861" />
+      <project id="cloudops" values="ECMAScript 5.1" collectionTime="1484334806454" />
+      <project id="zeus" values="ECMAScript 5.1" collectionTime="1491254358398" />
+      <project id="email-service" values="ECMAScript 5.1" collectionTime="1487283857603" />
+      <project id="salsify-ruby" values="ECMAScript 5.1" collectionTime="1490908630962" />
+      <project id="peter-gabriel" values="ECMAScript 5.1" collectionTime="1491254360456" />
+    </group>
+    <group name="run-configuration-type">
+      <project id="zeus" values="RakeRunConfigurationType,RailsRunConfigurationType" collectionTime="1491254358382" />
+      <project id="dandelion" values="IrbRunConfigurationType,RailsRunConfigurationType,RakeRunConfigurationType" collectionTime="1491488178939" />
+      <project id="alerts-service" values="RailsRunConfigurationType" collectionTime="1487964408219" />
+      <project id="peter-gabriel" values="RubyRunConfigurationType" collectionTime="1491254360449" />
+      <project id="content-review" values="JavaScriptTestRunnerKarma" collectionTime="1490390217765" />
+      <project id="dandy-1000" values="RailsRunConfigurationType" collectionTime="1482870712153" />
+    </group>
+  </component>
+  <component name="UsageTrigger">
+    <counts>
+      <entry feature="CreateFile.CreateFileAction" count="77" />
+      <entry feature="OpenInBrowser.Chrome" count="5" />
+      <entry feature="OpenInBrowser.Safari" count="7" />
+      <entry feature="StripeButton[Version Control].shown" count="1" />
+      <entry feature="debugger.attach.local" count="7" />
+      <entry feature="debugger.attach.local.RVM  ruby-2.3.0" count="5" />
+      <entry feature="debugger.attach.local.RVM  ruby-2.3.3" count="1" />
+      <entry feature="debugger.attach.local.ruby-2.2.4-p230" count="1" />
+      <entry feature="execute.IrbRunConfigurationType.Debug" count="3" />
+      <entry feature="execute.JavaScriptTestRunnerKarma.Debug" count="4" />
+      <entry feature="execute.JavaScriptTestRunnerKarma.Run" count="18" />
+      <entry feature="execute.NodeJSConfigurationType.Debug" count="17" />
+      <entry feature="execute.NodeJSConfigurationType.Run" count="48" />
+      <entry feature="execute.RSpecRunConfigurationType.Coverage" count="2" />
+      <entry feature="execute.RSpecRunConfigurationType.Debug" count="95" />
+      <entry feature="execute.RSpecRunConfigurationType.Run" count="476" />
+      <entry feature="execute.RailsRunConfigurationType.Coverage" count="1" />
+      <entry feature="execute.RailsRunConfigurationType.Debug" count="39" />
+      <entry feature="execute.RailsRunConfigurationType.Run" count="2" />
+      <entry feature="execute.RakeRunConfigurationType.Debug" count="11" />
+      <entry feature="execute.RakeRunConfigurationType.Run" count="2" />
+      <entry feature="execute.RubyRunConfigurationType.Debug" count="5" />
+      <entry feature="execute.RubyRunConfigurationType.Run" count="15" />
+      <entry feature="execute.TestUnitRunConfigurationType.Debug" count="4" />
+      <entry feature="execute.TestUnitRunConfigurationType.Run" count="17" />
+      <entry feature="ide.help.debugging.debugMenu.evaluate" count="1" />
+      <entry feature="ide.help.top" count="1" />
+      <entry feature="ide.settings.ESLint" count="1" />
+      <entry feature="ide.settings.Editor_Tabs" count="3" />
+      <entry feature="ide.settings.File_Types" count="1" />
+      <entry feature="ide.settings.HTML" count="1" />
+      <entry feature="ide.settings.Inspections" count="2" />
+      <entry feature="ide.settings.JSON" count="1" />
+      <entry feature="ide.settings.JavaScript" count="3" />
+      <entry feature="ide.settings.Other_File_Types" count="1" />
+      <entry feature="ide.settings.Plugins" count="7" />
+      <entry feature="ide.settings.Project_Structure" count="1" />
+      <entry feature="ide.settings.Ruby" count="1" />
+      <entry feature="ide.settings.Velocity" count="1" />
+      <entry feature="ide.settings.Version_Control" count="2" />
+      <entry feature="idea.caches.invalidated" count="1" />
+      <entry feature="ideaapp.started" count="115" />
+      <entry feature="json.schema.builtin.completion" count="55" />
+      <entry feature="structural.search" count="1" />
+      <entry feature="terminal.mac" count="5" />
+      <entry feature="welcome.screen.WelcomeScreen.Configure" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.CreateNewProject" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.ImportProject" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.OpenProject" count="2" />
+      <entry feature="welcome.screen.WelcomeScreen.Plugins" count="1" />
+    </counts>
+  </component>
+</application>

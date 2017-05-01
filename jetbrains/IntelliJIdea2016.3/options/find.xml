@@ -1,0 +1,20 @@
+<application>
+  <component name="FindSettings">
+    <option name="customScope" value="File '.../client/salsify/app/pods/application/route.js - [dandelion]'" />
+    <option name="defaultScopeName" value="File '.../client/salsify/app/pods/application/route.js - [dandelion]'" />
+    <option name="SEARCH_SCOPE" value="File '.../client/salsify/app/pods/application/route.js - [dandelion]'" />
+    <option name="FILE_MASK" value="*.rb" />
+    <recentFileMasks>
+      <mask>*.properties</mask>
+      <mask>*.html</mask>
+      <mask>*.jsp</mask>
+      <mask>*.xml</mask>
+      <mask>*.java</mask>
+      <mask>*.as</mask>
+      <mask>*.css</mask>
+      <mask>*.mxml</mask>
+      <mask>*.js</mask>
+      <mask>*.rb</mask>
+    </recentFileMasks>
+  </component>
+</application>

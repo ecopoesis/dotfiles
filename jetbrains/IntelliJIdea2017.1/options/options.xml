@@ -1,0 +1,68 @@
+<application>
+  <component name="PropertiesComponent">
+    <property name="Default.savedEditorTheme" value="_@user_Default" />
+    <property name="evlsprt3.163" value="15" />
+    <property name="installed.kotlin.plugin.version" value="1.1.1-release-IJ2017.1-1" />
+    <property name="android-component-compatibility-check" value="1493214076018" />
+    <property name="PLUGIN_FILTER" value="dock&#10;jso&#10;gem&#10;whitespace&#10;angul" />
+    <property name="project.wizard.group" value="RubyOnRails" />
+    <property name="jdk.selected.RUBY_MODULE" value="RVM: ruby-2.2.4 [dandelion]" />
+    <property name="toolwindow.stripes.buttons.info.shown" value="true" />
+    <property name="DeploymentNotificationsComponent.WarnDisplayed.Java7&amp;Windows7FTPIssue" value="false" />
+    <property name="lastTip" value="1" />
+    <property name="project.wizard.template" value="Ruby on Rails" />
+    <property name="ExpandBeforeRunStepsPanel" value="true" />
+    <property name="last.imported.location" value="$USER_HOME$/code/docker-jenkins-slave-ecs" />
+    <property name="create.project.preferred.importer" value="Existing Sources" />
+    <property name="HbFormatter" value="enabled" />
+    <property name="HbAutoCollapseBlocks" value="disabled" />
+    <property name="HbAutocompleteMustaches" value="enabled" />
+    <property name="HbDisableAutoGenerateCloseTag" value="enabled" />
+    <property name="com.intellij.history.integration.ui.views.FileHistoryDialog.0" value="158" />
+    <property name="HbCommenterLanguageId" value="HTML" />
+    <property name="TEMPLATES_FILTER_HISTORY" value="" />
+    <property name="SplitFileEditor.Proportion" value="0.8249763" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.3.3/bin/ruby:BASE_20" value="0.2.2.beta9" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.3.3/bin/ruby:IDE" value="0.6.1.beta4" />
+    <property name="selected.color.option.type" value="RUBY_PARAMDEF_CALL" />
+    <property name="ColorChooser.RecentColors" value="0-164-218-255,,,85-39-39-255,,,110-49-49-255,,,76-106-110-255,,,110-103-6-255,,,73-110-79-255,,,58-110-64-255,,,19-147-38-255,,,0-201-125-255,,,87-255-17-255" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.2.2/bin/ruby:BASE_20" value="0.2.2.beta9" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.2.2/bin/ruby:IDE" value="0.6.1.beta3" />
+    <property name="RSpecSupport.openFailureLine" value="false" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.3.0/bin/ruby:BASE_20" value="0.2.2.beta9" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.3.0/bin/ruby:IDE" value="0.6.1.beta4" />
+    <property name="settings.code.style.selected.tab.ruby" value="Other" />
+    <property name="markdown.do.not.ask.to.change.preview.provider" value="true" />
+    <property name="PACKAGE_FILTER" value="" />
+    <property name="KarmaJavaScriptTestRunnerSupport.hidePassedTests" value="false" />
+    <property name="KarmaJavaScriptTestRunnerSupport.hideIgnoredTests" value="true" />
+    <property name="KarmaJavaScriptTestRunnerSupport.scrollToSource" value="true" />
+    <property name="KarmaJavaScriptTestRunnerSupport.selectFirtsDefect" value="true" />
+    <property name="rerun.tests.notification.shown" value="true" />
+    <property name="fileTypeChangedCounter" value="11" />
+    <property name="CommitChangeListDialog.SPLITTER_PROPORTION_2" value="0.886076" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.41607773" />
+    <property name="RubyTestUnitSupport.openFailureLine" value="false" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.2.4/bin/ruby:BASE_20" value="0.2.2.beta9" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.2.4/bin/ruby:IDE" value="0.6.1.beta4" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Dependencies" />
+    <property name="Copy.OpenInEditor" value="true" />
+    <property name="rails.run.generators.popup.search.mask" value="" />
+    <property name="RSpec.Splitter.Proportion" value="0.30405965" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.4.0/bin/ruby:BASE_20" value="0.2.2.beta9" />
+    <property name="$USER_HOME$/.rvm/rubies/ruby-2.4.0/bin/ruby:IDE" value="0.6.1.beta3" />
+    <property name="LayoutCode.optimizeImports" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJSON" value="false" />
+    <property name="LayoutCode.processChangedText" value="false" />
+    <property name="js.rename.search.in.comments" value="true" />
+    <property name="js.rename.search.for.text.occurrences" value="false" />
+    <property name="com.intellij.history.integration.ui.views.DirectoryHistoryDialog.0" value="300" />
+    <property name="evlsprt3.171" value="18" />
+    <property name="file.gist.reindex.count" value="100332" />
+    <property name="find.popup.splitter" value="0.45185184" />
+    <property name="FileTemplates.SelectedTemplate" value="HTML File" />
+    <property name="LayoutCode.rearrangeEntriesPlain text" value="false" />
+    <property name="settings.code.style.selected.tab.AppleScript" value="Spaces" />
+    <property name="decompiler.legal.notice.accepted" value="true" />
+  </component>
+</application>

@@ -1,0 +1,319 @@
+<application>
+  <component name="RecentProjectsManager">
+    <option name="recentPaths">
+      <list>
+        <option value="$USER_HOME$/code/chronicle" />
+        <option value="$USER_HOME$/code/dandelion" />
+        <option value="$USER_HOME$/code/peter-gabriel" />
+        <option value="$USER_HOME$/code/docker-jenkins-slave-ecs" />
+        <option value="$USER_HOME$/code/product-content-grader-api" />
+        <option value="$USER_HOME$/code/product-content-grader-client" />
+        <option value="$USER_HOME$/code/zeus" />
+        <option value="$USER_HOME$/code/sftp_test" />
+        <option value="$USER_HOME$/code/docker-jnlp-slave" />
+        <option value="$USER_HOME$/code/salsify-ruby" />
+        <option value="$USER_HOME$/code/salsify_gem" />
+        <option value="$USER_HOME$/code/zeus-statemachine" />
+        <option value="$USER_HOME$/code/content-review" />
+        <option value="$USER_HOME$/code/ui-user-tracking" />
+        <option value="$USER_HOME$/code/avro-schema-registry" />
+        <option value="$USER_HOME$/code/docker-elasticsearch" />
+        <option value="$USER_HOME$/code/alerts-service" />
+        <option value="$USER_HOME$/code/email-service" />
+        <option value="$USER_HOME$/code/carrot-connector" />
+        <option value="$USER_HOME$/code/cloudops" />
+        <option value="$USER_HOME$/code/omniauth_salsify" />
+        <option value="$USER_HOME$/code/dandy-1000" />
+        <option value="$USER_HOME$/code/super-rentals" />
+        <option value="$USER_HOME$/code/boston-food-truck-slack-bot" />
+      </list>
+    </option>
+    <option name="openPaths">
+      <list>
+        <option value="$USER_HOME$/code/dandelion" />
+        <option value="$USER_HOME$/code/chronicle" />
+      </list>
+    </option>
+    <option name="lastPath" value="$USER_HOME$/code/chronicle" />
+    <option name="additionalInfo">
+      <map>
+        <entry key="$USER_HOME$/IdeaProjects/dandelion">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.11103.6" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1485528374194" />
+              <option name="buildTimestamp" value="1484600627335" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/alerts-service">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.12024.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487962830405" />
+              <option name="buildTimestamp" value="1485857118978" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/avro-schema-registry">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.12024.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488234083618" />
+              <option name="buildTimestamp" value="1485857100465" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/boston-food-truck-slack-bot">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1481838849480" />
+              <option name="buildTimestamp" value="1481287191016" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/carrot-connector">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.12024.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1486047022694" />
+              <option name="buildTimestamp" value="1485857152832" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/chronicle">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493649254633" />
+              <option name="buildTimestamp" value="1493104437251" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/cloudops">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.10154.41" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1484335920760" />
+              <option name="buildTimestamp" value="1482328058686" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/content-review">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490640639516" />
+              <option name="buildTimestamp" value="1488793100935" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/dandelion">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493649247861" />
+              <option name="buildTimestamp" value="1493104437251" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/dandy-1000">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482869879888" />
+              <option name="buildTimestamp" value="1481287194510" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/docker-elasticsearch">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.12024.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1488207672611" />
+              <option name="buildTimestamp" value="1485857100465" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/docker-jenkins-slave-ecs">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493068490731" />
+              <option name="buildTimestamp" value="1491502727446" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/docker-jnlp-slave">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490983573268" />
+              <option name="buildTimestamp" value="1488793134626" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/email-service">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.12024.16" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1487281701853" />
+              <option name="buildTimestamp" value="1485857122972" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/omniauth_salsify">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482875900580" />
+              <option name="buildTimestamp" value="1481287171273" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/peter-gabriel">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4249.39" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1493300105741" />
+              <option name="buildTimestamp" value="1493104439253" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/product-content-grader-api">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492613025728" />
+              <option name="buildTimestamp" value="1491502703911" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/product-content-grader-client">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492608699117" />
+              <option name="buildTimestamp" value="1491502703911" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/salsify-ruby">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490908624551" />
+              <option name="buildTimestamp" value="1488793139918" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/salsify_gem">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490725276515" />
+              <option name="buildTimestamp" value="1488793125661" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/sftp_test">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492097304959" />
+              <option name="buildTimestamp" value="1491502725703" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/super-rentals">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.9166.29" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1482156837127" />
+              <option name="buildTimestamp" value="1481287192476" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/ui-user-tracking">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490189419775" />
+              <option name="buildTimestamp" value="1488793085229" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/zeus">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-171.4073.35" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1492097785849" />
+              <option name="buildTimestamp" value="1491502725703" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/code/zeus-statemachine">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="IU-163.13906.18" />
+              <option name="productionCode" value="IU" />
+              <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
+              <option name="projectOpenTimestamp" value="1490708390103" />
+              <option name="buildTimestamp" value="1488793125661" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="lastProjectLocation" value="$USER_HOME$/code" />
+  </component>
+</application>
