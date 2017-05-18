@@ -16,7 +16,11 @@
 [color]
     ui = auto
 [alias]
-    l = log --pretty=colored
+    ln = log --pretty=colored
+    co = checkout
+    cob = !git checkout -b $1 && git commit --allow-empty -m \"[$2]\" && :
+    cobf = !git cob feature/$1 $2
+    cobb = !git cob bugfix/$1 $2
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
       
