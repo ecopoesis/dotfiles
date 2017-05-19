@@ -54,10 +54,4 @@ if [[ `uname` == 'Darwin' ]]; then
   defaults delete com.googlecode.iterm2
   rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && ln -s ${DIR}/mac/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
   defaults read com.googlecode.iterm2
-
-  # jetbrains
-  for JB_PREF_DIR in ${DIR}/jetbrains/*; do
-    BASE="$(basename ${JB_PREF_DIR})"
-    rm -rf ${HOME}/Library/Preferences/${BASE} && ln -s ${DIR}/jetbrains/${BASE} ${HOME}/Library/Preferences/${BASE}
-  done
 fi
