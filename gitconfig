@@ -2,7 +2,7 @@
 	name = Mike Roberts
 	email = miker@miker.org
 [push]
-	default = simple
+	default = current
 [core]
 	trustctime = false
 	autocrlf = input
