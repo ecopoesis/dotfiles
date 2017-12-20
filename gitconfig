@@ -1,7 +1,7 @@
 [user]
 	name = Mike Roberts
 	email = miker@miker.org
-	signingkey = B25F4886EFEAFDAF
+	signingkey = 72B609CAEB8B69C9
 [push]
 	default = current
 [core]
@@ -28,7 +28,8 @@
     cobb = !git cob bugfix/$1 && git commit --allow-empty -m \"[$2]\" && :
     rebase = rebase --keep-empty
     mom = !git fetch && git merge origin/master
-    commit = commit -S
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
-      
+[commit]
+	gpgsign = true
+
