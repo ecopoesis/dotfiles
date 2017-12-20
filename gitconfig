@@ -1,6 +1,7 @@
 [user]
 	name = Mike Roberts
 	email = miker@miker.org
+	signingkey = B25F4886EFEAFDAF
 [push]
 	default = current
 [core]
@@ -9,10 +10,14 @@
 	editor = vim
 	excludesfile = /Users/miker/.gitignore_global
 [merge]
-	tool = diffmerge
-[mergetool "diffmerge"]
-	cmd = diffmerge --merge\n--result=$MERGED $LOCAL $BASE $REMOTE
-	trustExitCode = true
+	tool = intellij
+[mergetool "intellij"]
+    cmd = idea merge $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE") $(cd $(dirname "$BASE") && pwd)/$(basename "$BASE") $(cd $(dirname "$MERGED") && pwd)/$(basename "$MERGED")
+    trustExitCode = true
+[diff]
+    tool = intellij
+[difftool "intellij"]
+    cmd = idea diff $(cd $(dirname "$LOCAL") && pwd)/$(basename "$LOCAL") $(cd $(dirname "$REMOTE") && pwd)/$(basename "$REMOTE")
 [color]
     ui = auto
 [alias]
@@ -22,6 +27,7 @@
     cobf = !git cob feature/$1 && git commit --allow-empty -m \"[$2]\" && :
     cobb = !git cob bugfix/$1 && git commit --allow-empty -m \"[$2]\" && :
     rebase = rebase --keep-empty
+    mom = !git fetch && git merge origin/master
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
       

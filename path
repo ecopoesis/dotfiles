@@ -24,6 +24,7 @@ pathadd ${HOME}/.rvm/bin
 pathadd /usr/local/heroku/bin
 pathadd ${HOME}/.nvm
 pathadd ${HOME}/code/potpourri/bin
+pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
 
 # macports
 pathadd /opt/local/bin
