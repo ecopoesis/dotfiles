@@ -28,6 +28,7 @@
     cobb = !git cob bugfix/$1 && git commit --allow-empty -m \"[$2]\" && :
     rebase = rebase --keep-empty
     mom = !git fetch && git merge origin/master
+    ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git push && :
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [commit]
