@@ -23,6 +23,7 @@
 [alias]
     ln = log --pretty=colored
     co = checkout
+    st = status
     cob = !git checkout -b $1 && :
     cobf = !git cob feature/$1 && git commit --allow-empty -m \"[$2]\" && :
     cobb = !git cob bugfix/$1 && git commit --allow-empty -m \"[$2]\" && :

@@ -15,3 +15,4 @@ tmp/**/*
 .rakeTasks
 .rake_tasks~
 .ruby-gemset
+scratch
