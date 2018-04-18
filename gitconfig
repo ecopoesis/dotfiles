@@ -27,7 +27,7 @@
     ca = commit -a
     cob = !git checkout -b $1 && :
     cobf = !git checkout -b feature/$1 && :
-    jpr = !git cob feature/$1 && git commit --allow-empty -m \"[$2]\n[skip ci]\" && git push && hub pull-request -b master -F- <<< \"WIP - $3 [$2]\n\n[[$2]](https://salsify.atlassian.net/browse/$2)\" && :
+    jpr = !git cobf $1 && git commit --allow-empty -m \"[$2]\n[skip ci]\" && git push && hub pull-request -b master -F- <<< \"WIP - $3 [$2]\n\n[[$2]](https://salsify.atlassian.net/browse/$2)\" && :
     rebase = rebase --keep-empty
     mom = !git fetch && git merge origin/master
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git push && :
