@@ -26,7 +26,7 @@
     st = status
     ca = commit -a
     cob = !git checkout -b $1 && :
-    cobf = !git cob feature/$1 && git commit --allow-empty -m \"[$2]\" && :
+    cobf = !git cob feature/$1 && git commit --allow-empty -m \"[$2]\" && git push && hub pull-request -m \"WIP - $3 [$2]\" -b master && :
     cobb = !git cob bugfix/$1 && git commit --allow-empty -m \"[$2]\" && :
     rebase = rebase --keep-empty
     mom = !git fetch && git merge origin/master

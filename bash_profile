@@ -103,14 +103,14 @@ if [ -d ${HOME}/tools/hive ] ; then
 fi
 
 # JVM development setup
-export GRADLE_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
-export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC"
-export SBT_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
-export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -XX:+UseConcMarkSweepGC -Duser.timezone=UTC"
+export GRADLE_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
+export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC"
+export SBT_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
+export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC"
 
 # mac java
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+    export JAVA_HOME=`/usr/libexec/java_home -v 10.0`
 fi
 
 # set the number of open files to be 1024
