@@ -1,7 +1,11 @@
 ## useful functions
 
 function hist() {
-    history | grep "$1"
+    cmd='history'
+    for var in "$@"; do
+      cmd="${cmd} | grep ${var}"
+    done
+    eval $cmd
 }
 
 # find shorthand
@@ -10,7 +14,7 @@ function f() {
 }
 
 # Copy w/ progress
-function copy () {
+function copy() {
   rsync -WavP --human-readable --progress $1 $2
 }
 
