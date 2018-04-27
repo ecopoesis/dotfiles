@@ -9,6 +9,8 @@ set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
 
+let &t_ut=''
+
 syntax on
 
 filetype indent on
