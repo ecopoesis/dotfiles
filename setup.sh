@@ -11,6 +11,8 @@
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 OLD=${DIR}/old
 LEN=`expr ${#DIR} + 2`
+CONFIG_DIR=${DIR}/config
+CONFIG_LEN=`expr ${#CONFIG_DIR} + 2`
 ##########
 
 # remove old ~/dotfiles_old
@@ -23,10 +25,10 @@ mkdir -p ${OLD}
 # move any existing dotfiles in homedir to dotfiles/old directory, then create symlinks
 for FILE in ${DIR}/*; do
     # skip *.sh files and README.md
-    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]] && [[ ! ${FILE} == *mac ]] && [[ ! ${FILE} == *jetbrains ]]; then
+    if [[ ! ${FILE} == *.sh ]] && [[ ! ${FILE} == *README.md ]] && [[ ! ${FILE} == ${OLD} ]] && [[ ! ${FILE} == *config ]]; then
         BASE=`echo ${FILE} | cut -c ${LEN}-`
 
-        if [ -f ${BASE} ]; then
+        if [ -f ~/.${BASE} ] || [ -d ~/.${BASE} ]; then
           echo "Moving ~/.${BASE} to ${OLD}"
           cp -LR ~/.${BASE} ${OLD}/${BASE}
         fi
@@ -34,6 +36,21 @@ for FILE in ${DIR}/*; do
         echo "Creating symlink to ${FILE} in home directory"
         rm -rf ~/.${BASE} && ln -s ${FILE} ~/.${BASE}
     fi
+done
+
+mkdir -p ~/.config
+mkdir -p ${OLD}/config
+for FILE in ${DIR}/config/*; do
+    BASE=`echo ${FILE} | cut -c ${CONFIG_LEN}-`
+    echo ~/.config/${BASE}
+
+    if [ -f ~/.config/${BASE} ] || [ -d ~/.config/${BASE} ]; then
+        echo "Moving ~/.config/${BASE} to ${OLD}"
+        cp -LR ~/.config/${BASE} ${OLD}/config/
+    fi
+
+    echo "Creating symlink to ${FILE} in ~/.config directory"
+    rm -rf ~/.config/${BASE} && ln -s ${FILE} ~/.config/${BASE}
 done
 
 if [[ `uname` == 'Darwin' ]]; then
@@ -48,10 +65,3 @@ fi
 echo "Copying fonts..."
 cp ${DIR}/fonts/* ${FONT_DIR}
 
-# setup Mac desktop specific stuff
-if [[ `uname` == 'Darwin' ]]; then
-  # iterm
-  defaults delete com.googlecode.iterm2
-  rm -rf ~/Library/Preferences/com.googlecode.iterm2.plist && ln -s ${DIR}/mac/com.googlecode.iterm2.plist ~/Library/Preferences/com.googlecode.iterm2.plist
-  defaults read com.googlecode.iterm2
-fi
