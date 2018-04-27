@@ -27,10 +27,17 @@
     ca = commit -a
     cob = !git checkout -b $1 && :
     cobf = !git checkout -b feature/$1 && :
-    jpr = !git cobf $1 && git commit --allow-empty -m \"[$2]\n[skip ci]\" && git push && hub pull-request -b master -F- <<< \"WIP - $3 [$2]\n\n[[$2]](https://salsify.atlassian.net/browse/$2)\" && :
+    jira = !git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
+    pr = !git push && hub pull-request -b master -F- <<< \"$1 [`git get-jira`]\n\n[[`git get-jira`]](https://salsify.atlassian.net/browse/`git get-jira`)\" && :
     rebase = rebase --keep-empty
     mom = !git fetch && git merge origin/master
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git push && :
+   
+    # get the commit message description of the first commit in this branch 
+    get-first = !git log master..`git rev-parse --abbrev-ref HEAD` --pretty=format:%B | tail -1 && :
+
+    # assumes the first commit of a branch had a commit message like [JIRA-123]
+    get-jira = !git get-first | tail -c +2 | head -c -2 && :
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [commit]
