@@ -14,5 +14,5 @@ tmp/**/*
 .generators
 .rakeTasks
 .rake_tasks~
-.ruby-gemset
 scratch
+.idea
