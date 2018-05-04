@@ -189,6 +189,7 @@ _prompt_command () {
   PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]${BRANCH_DISP}$ $txtrst"
   PS2='> '
   PS4='+ '
+  export BRANCH
 }
 
 # set the prompt command
