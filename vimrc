@@ -29,7 +29,7 @@ autocmd Filetype ruby setlocal ts=2 sw=2 expandtab
 hi CursorLine ctermbg=239  cterm=none "Allows for highlighting in the terminal
 
 set t_Co=256
-colorscheme twilight 
+colorscheme darcula
 highlight clear SignColumn
 highlight LineNr ctermfg=grey
 

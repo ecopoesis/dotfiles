@@ -34,7 +34,7 @@
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git push && :
     
     # open GitHub diff view
-    comp = !git push && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/${BRANCH}\" && :
+    comp = !git push && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
 
     # get the commit message description of the first commit in this branch 
     get-first = !git log master..`git rev-parse --abbrev-ref HEAD` --pretty=format:%B | tail -1 && :
