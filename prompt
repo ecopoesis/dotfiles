@@ -88,15 +88,15 @@ _prompt_command () {
   txtcyn='\[\033[0;36m\]' # Cyan
   txtwht='\[\033[0;37m\]' # White
 
-  # bold text colors
-  bldblk='\[\033[1;30m\]' # Black
-  bldred='\[\033[1;31m\]' # Red
-  bldgrn='\[\033[1;32m\]' # Green
-  bldylw='\[\033[1;33m\]' # Yellow
-  bldblu='\[\033[1;34m\]' # Blue
-  bldpur='\[\033[1;35m\]' # Purple
-  bldcyn='\[\033[1;36m\]' # Cyan
-  bldwht='\[\033[1;37m\]' # White
+  # bright text colors
+  brtblk='\[\033[0;90m\]' # Black
+  brtred='\[\033[0;91m\]' # Red
+  brtgrn='\[\033[0;92m\]' # Green
+  brtylw='\[\033[0;93m\]' # Yellow
+  brtblu='\[\033[0;94m\]' # Blue
+  brtpur='\[\033[0;95m\]' # Purple
+  brtcyn='\[\033[0;96m\]' # Cyan
+  brtwht='\[\033[0;97m\]' # White
 
   # background colors
   bakblk='\[\033[40m\]'   # Black
@@ -176,17 +176,18 @@ _prompt_command () {
   if [[ -z $DIRTYFILES ]]; then
     DIRTY_DISP=""
   else
-    DIRTY_DISP=" $txtred*"
+    DIRTY_BIT=$'\xe2\x9c\xb1'
+    DIRTY_DISP=" $txtred${DIRTY_BIT}"
   fi
 
   if [[ -z $BRANCH ]]; then
     BRANCH_DISP=""
   else
-    BRANCH_DISP=" $txtgrn($txtpur${BRANCH}${DIRTY_DISP}$txtgrn)"
+    BRANCH_DISP=" $brtgrn($brtpur${BRANCH}${DIRTY_DISP}$brtgrn)"
   fi
 
   # set the prompts
-  PS1="${TITLEBAR}$bakwht$txtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$txtblu${SHORTPWD}$txtgrn]${BRANCH_DISP}$ $txtrst"
+  PS1="${TITLEBAR}$bakwht$brtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$brtblu${SHORTPWD}$brtgrn]${BRANCH_DISP}$ $txtrst"
   PS2='> '
   PS4='+ '
 }
