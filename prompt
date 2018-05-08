@@ -177,7 +177,7 @@ _prompt_command () {
     DIRTY_DISP=""
   else
     DIRTY_BIT=$'\xe2\x9c\xb1'
-    DIRTY_DISP=" $txtred${DIRTY_BIT}"
+    DIRTY_DISP=" $brtylw${DIRTY_BIT}"
   fi
 
   if [[ -z $BRANCH ]]; then
@@ -187,7 +187,7 @@ _prompt_command () {
   fi
 
   # set the prompts
-  PS1="${TITLEBAR}$bakwht$brtgrn[$txtblu\u$txtblk@$txtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$brtblu${SHORTPWD}$brtgrn]${BRANCH_DISP}$ $txtrst"
+  PS1="${TITLEBAR}$bakwht$brtgrn[$txtblu\u$txtblk@$brtred${SHORTHOST}${TMUXINFO}${SCREENINFO}$txtblk:$brtblu${SHORTPWD}$brtgrn]${BRANCH_DISP}$ $txtrst"
   PS2='> '
   PS4='+ '
 }
