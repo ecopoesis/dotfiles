@@ -25,6 +25,7 @@ pathadd /usr/local/heroku/bin
 pathadd ${HOME}/.nvm
 pathadd ${HOME}/code/potpourri/bin
 pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
+pathadd $HOME/.cargo/bin:$PATH
 
 # macports
 pathadd /opt/local/bin
