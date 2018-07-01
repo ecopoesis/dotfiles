@@ -27,9 +27,9 @@ esac
 export SVN_EDITOR="vim"
 
 # load bash_completion
-export BASH_COMPLETION="`cd ~; pwd`/.completion"
-export BASH_COMPLETION_DIR="`cd ~; pwd`/.completion.d"
-source $BASH_COMPLETION
+export BASH_COMPLETION="$(cd ~; pwd)/.completion"
+export BASH_COMPLETION_DIR="$(cd ~; pwd)/.completion.d"
+source "$BASH_COMPLETION"
 
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
@@ -59,8 +59,8 @@ if [ -f ~/.prompt ]; then
 fi
 
 # load NVM
-if [ -d "${HOME}/.nvm" ] ; then
-    export NVM_DIR="${HOME}/.nvm"
+if [ -d "$HOME/.nvm" ] ; then
+    export NVM_DIR="$HOME/.nvm"
     [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 fi
 
@@ -71,35 +71,35 @@ fi
 
 # make SSH agent work
 if [ -z "$SSH_AUTH_SOCK" ]; then
-  eval `ssh-agent`
+  eval "$(ssh-agent)"
   trap "kill $SSH_AGENT_PID" 0
 fi
 
 # load RVM
-if [ -d "${HOME}/.rvm" ] ; then
+if [ -d "$HOME/.rvm" ] ; then
 	[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 fi
 
 # android SDK
-if [ -d "${HOME}/tools/android-sdk-macosx" ] ; then
-    export ANDROID_HOME=${HOME}/tools/android-sdk-macosx
+if [ -d "$HOME/tools/android-sdk-macosx" ] ; then
+    export ANDROID_HOME="$HOME"/tools/android-sdk-macosx
 fi
 
 # android NDK
 if [ -d "$HOME/tools/android-ndk" ] ; then
-    export ANDROID_NDK_HOME=${HOME}/tools/android-ndk
+    export ANDROID_NDK_HOME="$HOME"/tools/android-ndk
 fi
 
 # hive setup
-if [ -d ${HOME}/tools/hadoop ] ; then
-    export HADOOP_HOME=${HOME}/tools/hadoop
-    pathadd ${HADOOP_HOME}/bin
+if [ -d "$HOME"/tools/hadoop ] ; then
+    export HADOOP_HOME="$HOME"/tools/hadoop
+    pathadd "$HADOOP_HOME"/bin
 fi
 
 # hadoop setup
-if [ -d ${HOME}/tools/hive ] ; then
-    export HIVE_HOME=${HOME}/tools/hive
-    pathadd ${HIVE_HOME}/bin
+if [ -d "$HOME"/tools/hive ] ; then
+    export HIVE_HOME="$HOME"/tools/hive
+    pathadd "$HIVE_HOME"/bin
 fi
 
 # JVM development setup
@@ -110,7 +110,7 @@ export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -Duser.timezo
 
 # mac java
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME=`/usr/libexec/java_home -v 10.0`
+    export JAVA_HOME="$(/usr/libexec/java_home -v 10.0)"
 fi
 
 # set the number of open files to be 1024
@@ -119,7 +119,7 @@ ulimit -S -n 1024
 # why is it an immutable law of the universe that all software named spring has to suck?
 export DISABLE_SPRING=1
 
-export SALSIFY_HOME=${HOME}/code
+export SALSIFY_HOME="$HOME"/code
 
 if exists brew; then
     export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"

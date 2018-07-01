@@ -13,32 +13,41 @@ pathadd /usr/bin
 pathadd /usr/sbin
 pathadd /usr/local/bin
 pathadd /usr/local/sbin
-pathadd ${HOME}/bin
+pathadd "$HOME"/bin
 pathadd /usr/local/mysql/bin
 pathadd ~/tools/scala/bin
 pathadd ~/tools/sbt/bin
 pathadd ~/tools/activator
 pathadd ~/tools/android-sdk-macosx/platform-tools
 pathadd ~/bin
-pathadd ${HOME}/.rvm/bin
+pathadd "$HOME"/.rvm/bin
 pathadd /usr/local/heroku/bin
-pathadd ${HOME}/.nvm
-pathadd ${HOME}/code/potpourri/bin
+pathadd "$HOME"/.nvm
+pathadd "$HOME"/code/potpourri/bin
 pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
+
+# rust
+pathadd "$HOME"/.cargo/bin
 
 # macports
 pathadd /opt/local/bin
 pathadd /opt/local/sbin
 
 if [ -d "/opt/local/man" ]; then
-  MANPATH=/opt/local/man:${MANPATH}
+  MANPATH=/opt/local/man:"$MANPATH"
 fi
 
 if [ -d "/opt/local/info" ]; then
-  INFOPATH=/opt/local/info:${INFOPATH}
+  INFOPATH=/opt/local/info:"$INFOPATH"
 fi
 
 # prefer gnu core tools
 if [ -e /usr/local/bin/brew ]; then
     export PATH="$(brew --prefix coreutils)/libexec/gnubin:/usr/local/bin:$PATH"
 fi
+
+if [ -e /usr/local/bin/pyenv ]; then
+    eval "$(pyenv init -)"
+fi
+
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
