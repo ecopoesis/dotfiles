@@ -71,6 +71,8 @@ _dir_chomp_tab () {
 }
 
 _prompt_command () {
+  local EXIT="$?"   
+
   # Record each line as it gets issued
   history -a
   history -c
@@ -186,8 +188,14 @@ _prompt_command () {
     BRANCH_DISP=" $brtgrn($brtpur$BRANCH$DIRTY_DISP$brtgrn)"
   fi
 
+  if [ $EXIT != 0 ]; then
+    EXIT_CODE="\[\e[90;41m\] $EXIT "      
+  else
+    EXIT_CODE=""
+  fi
+
   # set the prompts
-  PS1="$TITLEBAR$bakwht$brtgrn[$txtblu\u$txtblk@$brtred$SHORTHOST$TMUXINFO$SCREENINFO$txtblk:$brtblu$SHORTPWD$brtgrn]$BRANCH_DISP$ $txtrst"
+  PS1="$TITLEBAR$EXIT_CODE$bakwht$brtgrn[$txtblu\u$txtblk@$brtred$SHORTHOST$TMUXINFO$SCREENINFO$txtblk:$brtblu$SHORTPWD$brtgrn]$BRANCH_DISP$ $txtrst"
   PS2='> '
   PS4='+ '
 }
