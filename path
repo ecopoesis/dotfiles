@@ -33,6 +33,9 @@ pathadd "$HOME"/.cargo/bin
 pathadd /opt/local/bin
 pathadd /opt/local/sbin
 
+# anaconda
+pathadd "$HOME"/anaconda2/bin
+
 if [ -d "/opt/local/man" ]; then
   MANPATH=/opt/local/man:"$MANPATH"
 fi
