@@ -59,3 +59,6 @@ alias emacs='vim'
 
 # or vi
 alias vi='vim'
+
+# be smart
+alias be='bundle exec'

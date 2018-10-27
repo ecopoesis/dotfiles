@@ -25,6 +25,8 @@ pathadd /usr/local/heroku/bin
 pathadd "$HOME"/.nvm
 pathadd "$HOME"/code/potpourri/bin
 pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
+pathadd /anaconda2/bin
+pathadd /anaconda3/bin
 
 # rust
 pathadd "$HOME"/.cargo/bin

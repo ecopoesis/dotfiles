@@ -110,7 +110,7 @@ export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -Duser.timezo
 
 # mac java
 if [[ -f /usr/libexec/java_home ]]; then
-    export JAVA_HOME="$(/usr/libexec/java_home -v 10.0)"
+    export JAVA_HOME="$(/usr/libexec/java_home -v 11.0)"
 fi
 
 # set the number of open files to be 1024
