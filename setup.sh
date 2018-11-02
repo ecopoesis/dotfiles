@@ -11,9 +11,9 @@
 # get script dir
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 OLD="$DIR"/old
-LEN="$(expr ${#DIR} + 2)"
+LEN="$((${#DIR} + 2))"
 CONFIG_DIR="$DIR"/config
-CONFIG_LEN="$(expr ${#CONFIG_DIR} + 2)"
+CONFIG_LEN="$((${#CONFIG_DIR} + 2))"
 ##########
 
 # remove old ~/dotfiles_old

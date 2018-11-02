@@ -10,8 +10,8 @@ Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-syntastic/syntastic'
 Plug 'mbbill/undotree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 set nohls
@@ -24,6 +24,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
+set encoding=UTF-8
 
 let &t_ut=''
 
@@ -66,21 +67,15 @@ set mouse=a
 " Must be one of: xterm, xterm2, netterm, dec, jsbterm, pterm
 set ttymouse=xterm2
 
+" copy visual selection automatically
+set clipboard+=autoselect
+set guioptions+=a
+
 " NerdTree
 map <C-t> :NERDTreeToggle<CR>
 
 " UndoTree
 map <C-u> :UndotreeToggle<CR>
-
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
 
 " airline
 let g:airline_theme='simple'
