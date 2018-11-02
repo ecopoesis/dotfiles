@@ -54,15 +54,3 @@ for FILE in "$DIR"/config/*; do
     rm -rf ~/.config/"$BASE" && ln -s "$FILE" ~/.config/"$BASE"
 done
 
-if [[ "$(uname)" == 'Darwin' ]]; then
-  # MacOS
-  FONT_DIR="$HOME/Library/Fonts"
-else
-  # Linux
-  FONT_DIR="$HOME/.local/share/fonts"
-  mkdir -p "$FONT_DIR"
-fi
-
-echo "Copying fonts..."
-cp "$DIR"/fonts/* "$FONT_DIR"
-
