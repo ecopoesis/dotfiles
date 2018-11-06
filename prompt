@@ -189,7 +189,7 @@ _prompt_command () {
   fi
 
   if [ $EXIT != 0 ]; then
-    EXIT_CODE="\[\e[90;41m\] $EXIT "      
+    EXIT_CODE="\[\e[1;41m\] $EXIT "      
   else
     EXIT_CODE=""
   fi

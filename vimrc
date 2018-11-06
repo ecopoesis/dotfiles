@@ -12,6 +12,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'airblade/vim-gitgutter'
 Plug 'mbbill/undotree'
 Plug 'ryanoasis/vim-devicons'
+Plug 'dansomething/vim-hackernews'
 call plug#end()
 
 set nohls
