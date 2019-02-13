@@ -22,13 +22,14 @@
     ui = auto
 [alias]
     ln = log --pretty=colored
+    bls = branch --sort=-committerdate
     co = checkout
     st = status
     ca = commit -a
     cap = !git ca && git push && :
     cob = !git checkout -b $1 && :
     cobf = !git checkout -b feature/$1 && :
-    jira = !git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
+    jira = !git co master && git pull && git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
     pr = !git push && hub pull-request -b master -F- <<< \"$1 [`git get-jira`]\n\n[`git get-jira`]\" && :
     pr-jira = !git push && hub pull-request -b master -F- <<< \"$1 [$2]\n\n[$2]\" && :
     rebase = rebase --keep-empty
