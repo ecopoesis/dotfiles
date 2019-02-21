@@ -26,6 +26,7 @@ set shiftwidth=4
 set expandtab
 set backspace=indent,eol,start
 set encoding=UTF-8
+set colorcolumn=80
 
 let &t_ut=''
 
