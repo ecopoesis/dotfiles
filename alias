@@ -62,3 +62,6 @@ alias vi='vim'
 
 # be smart
 alias be='bundle exec'
+
+# autoconnect to Salisfy VPN
+alias vpn="osascript ~/dotfiles/AppleScripts/salsify-vpn-connect.applescript"
