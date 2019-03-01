@@ -21,7 +21,7 @@
 [color]
     ui = auto
 [alias]
-    ln = log --pretty=colored
+    ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
     bls = branch --sort=-committerdate
     co = checkout
     st = status
