@@ -21,24 +21,25 @@
 [color]
     ui = auto
 [alias]
+    pu = push -u
     ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
     bls = branch --sort=-committerdate
     co = checkout
     st = status
     ca = commit -a
-    cap = !git ca && git push && :
+    cap = !git ca && git pu && :
     cob = !git checkout -b $1 && :
     cobf = !git checkout -b feature/$1 && :
     jira = !git co master && git pull && git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
-    pr = !git push && hub pull-request -b master -F- <<< \"$1 [`git get-jira`]\n\n[[`git get-jira`]]\" && :
-    pr-jira = !git push && hub pull-request -b master -F- <<< \"$1 [$2]\n\n[[$2]]\" && :
+    pr = !git pu && hub pull-request -b master -F- <<< \"$1 [`git get-jira`]\n\n[[`git get-jira`]]\" && :
+    pr-jira = !git pu && hub pull-request -b master -F- <<< \"$1 [$2]\n\n[[$2]]\" && :
     rebase = rebase --keep-empty
     mom = !git fetch origin && git merge origin/master
     mum = !git fetch upstream && git merge upstream/master
-    ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git push && :
+    ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
     
     # open GitHub diff view
-    comp = !git push && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
+    comp = !git pu && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
 
     # get the commit message description of the first commit in this branch 
     get-first = !git log master..`git rev-parse --abbrev-ref HEAD` --pretty=format:%B | tail -1 && :
