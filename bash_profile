@@ -124,3 +124,9 @@ export SALSIFY_HOME="$HOME"/code
 if exists brew; then
     export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 fi
+
+# load PGVM
+if [ -d "$HOME/.pgvm" ] ; then
+    source "$HOME"/.pgvm/pgvm_env
+fi
+
