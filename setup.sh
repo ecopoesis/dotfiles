@@ -54,3 +54,5 @@ for FILE in "$DIR"/config/*; do
     rm -rf ~/.config/"$BASE" && ln -s "$FILE" ~/.config/"$BASE"
 done
 
+vim +PlugInstall +qall
+
