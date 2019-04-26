@@ -1,4 +1,4 @@
 old
 .tmux.conf.swp
-vim/.netrwhist
-vim/plugged
+src/vim/.netrwhist
+src/vim/plugged
