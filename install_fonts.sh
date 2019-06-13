@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-brew tap caskroom/fonts
-brew cask install font-hack-nerd-font
+if [ -x "$(command -v brew)" ]; then
+  brew tap caskroom/fonts
+  brew cask install font-hack-nerd-font
+fi

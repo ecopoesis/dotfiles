@@ -8,7 +8,7 @@
 
 ########## Variables
 
-# get scrip
+# get dirs
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 SRC="$DIR"/src
 OLD="$DIR"/old
@@ -16,6 +16,17 @@ LEN="$((${#SRC} + 2))"
 CONFIG_DIR="$DIR"/config
 CONFIG_LEN="$((${#CONFIG_DIR} + 2))"
 ##########
+
+# switch to zsh or die
+if ! [ -x "$(command -v zsh)" ]; then
+  echo 'Error: zsh is not installed.' >&2
+  exit 1
+fi
+
+# install omz
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+chsh -s which "$(command -v zsh)"
 
 # remove old ~/dotfiles_old
 rm -rf "$HOME"/dotfiles_old
@@ -55,3 +66,14 @@ done
 "$DIR"/config_vim.sh
 "$DIR"/install_fonts.sh
 "$DIR"/install_kitty.sh
+
+# cleanup things that used to exist
+rm -f ~/.alias
+rm -f ~/.bash_profile
+rm -f ~/.bashrc
+rm -f ~/.completion
+rm -f ~/.dircolors
+rm -f ~/.function
+rm -f ~/.path
+rm -f ~/.prompt
+rm -rf ~/.completion.d
