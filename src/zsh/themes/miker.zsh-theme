@@ -124,9 +124,17 @@ prompt_dir() {
   prompt_segment default 012 "$(dir_chomp_tab 20)"
 }
 
+prompt_vm_env() {
+  PYENV="$(pyenv_prompt_info)"
+  if [ "$PYENV" != "system" ]; then
+    prompt_segment default green " $PYENV\n"
+  fi
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
+  prompt_vm_env
   prompt_exitcode
   prompt_open
   prompt_user
