@@ -124,17 +124,28 @@ prompt_dir() {
   prompt_segment default 012 "$(dir_chomp_tab 20)"
 }
 
-prompt_vm_env() {
+prompt_pyenv() {
   PYENV="$(pyenv_prompt_info)"
   if [ "$PYENV" != "system" ]; then
     prompt_segment default green " $PYENV\n"
   fi
 }
 
+prompt_nvm() {
+  if [ -x "$(command -v less)" ]; then
+    NVM_CURRENT="$(nvm current)"
+    NVM_DEFAULT="$(nvm version default)"
+    if [ "$NVM_CURRENT" != "$NVM_DEFAULT" ]; then
+      prompt_segment default 034 " $NVM_CURRENT\n"
+    fi
+  fi
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
-  prompt_vm_env
+  prompt_pyenv
+  prompt_nvm
   prompt_exitcode
   prompt_open
   prompt_user
