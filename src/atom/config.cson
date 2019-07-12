@@ -1,0 +1,11 @@
+"*":
+  autosave:
+    enabled: true
+  core:
+    telemetryConsent: "limited"
+  editor:
+    fontFamily: "Hack Nerd Font, Menlo, Consolas, DejaVu Sans Mono, monospace"
+  "exception-reporting":
+    userId: "b3434e43-17ad-4429-8aed-3c00ef76b30b"
+  welcome:
+    showOnStartup: false

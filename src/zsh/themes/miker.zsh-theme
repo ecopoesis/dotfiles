@@ -132,11 +132,20 @@ prompt_pyenv() {
 }
 
 prompt_nvm() {
-  if [ -x "$(command -v less)" ]; then
+  if [ -x "$(command -v nvm)" ]; then
     NVM_CURRENT="$(nvm current)"
     NVM_DEFAULT="$(nvm version default)"
     if [ "$NVM_CURRENT" != "$NVM_DEFAULT" ]; then
       prompt_segment default 034 " $NVM_CURRENT\n"
+    fi
+  fi
+}
+
+prompt_rvm() {
+  if [ -x "$(command -v rvm-prompt)" ]; then
+    RVM="$(rvm-prompt i v g p -d)"
+    if [ ! -z "$RVM" ]; then
+      prompt_segment default 160 " $RVM\n"
     fi
   fi
 }
@@ -146,6 +155,7 @@ build_prompt() {
   RETVAL=$?
   prompt_pyenv
   prompt_nvm
+  prompt_rvm
   prompt_exitcode
   prompt_open
   prompt_user
