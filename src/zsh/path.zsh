@@ -29,6 +29,7 @@ pathadd "$HOME"/code/potpourri/bin
 pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
 pathadd /anaconda2/bin
 pathadd /anaconda3/bin
+pathadd "$HOME"/.jenv/bin
 
 # rust
 pathadd "$HOME"/.cargo/bin

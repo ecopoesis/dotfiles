@@ -150,12 +150,23 @@ prompt_rvm() {
   fi
 }
 
+prompt_jenv() {
+  if exists jenv; then
+    JENV="$(jenv version-name)"
+    JENV_GLOBAL="$(jenv global)"
+    if [ "$JENV" != "system" ] && [ "$JENV" != "$JENV_GLOBAL" ]; then
+      prompt_segment default 014 " $JENV\n"
+    fi
+  fi
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
   prompt_pyenv
   prompt_nvm
   prompt_rvm
+  prompt_jenv
   prompt_exitcode
   prompt_open
   prompt_user

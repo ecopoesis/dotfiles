@@ -10,6 +10,11 @@ if [ -d "$HOME/.rvm" ] ; then
 	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 fi
 
+# load jenv
+if exists jenv ; then
+  eval "$(jenv init -)"
+fi
+
 # load NVM
 if [ -d "$HOME/.nvm" ] ; then
   export NVM_DIR="$HOME/.nvm"

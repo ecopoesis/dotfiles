@@ -55,11 +55,6 @@ export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -Duser.timez
 export SBT_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
 export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC"
 
-# mac java
-if [[ -f /usr/libexec/java_home ]]; then
-  export JAVA_HOME="$(/usr/libexec/java_home -v 11.0)"
-fi
-
 # set the number of open files to be 1024
 ulimit -S -n 1024
 
