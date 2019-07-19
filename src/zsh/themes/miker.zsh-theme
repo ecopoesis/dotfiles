@@ -132,7 +132,7 @@ prompt_pyenv() {
 }
 
 prompt_nvm() {
-  if [ -x "$(command -v nvm)" ]; then
+  if exists nvm; then
     NVM_CURRENT="$(nvm current)"
     NVM_DEFAULT="$(nvm version default)"
     if [ "$NVM_CURRENT" != "$NVM_DEFAULT" ]; then
