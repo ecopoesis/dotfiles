@@ -160,6 +160,11 @@ prompt_jenv() {
   fi
 }
 
+prompt_aws() {
+  [[ -z $AWS_PROFILE ]] && return
+  prompt_segment default 208 " $AWS_PROFILE"
+}
+
 ## Main prompt
 build_prompt() {
   RETVAL=$?
@@ -167,6 +172,7 @@ build_prompt() {
   prompt_nvm
   prompt_rvm
   prompt_jenv
+  prompt_aws
   prompt_exitcode
   prompt_open
   prompt_user
