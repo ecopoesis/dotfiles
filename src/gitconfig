@@ -36,6 +36,8 @@
     rebase = rebase --keep-empty
     mom = !git fetch origin && git merge origin/master
     mum = !git fetch upstream && git merge upstream/master
+    mod = !git fetch origin && git merge origin/develop
+    mud = !git fetch origin && git merge upstream/develop
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
     
     # open GitHub diff view
