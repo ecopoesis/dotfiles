@@ -21,6 +21,11 @@ if [ -d "$HOME/.nvm" ] ; then
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 fi
 
+# load poetry
+if [ -d "$HOME/.poetry" ] ; then
+  source $HOME/.poetry/env
+fi
+
 # place this after nvm initialization!
 autoload -U add-zsh-hook
 load-nvmrc() {
