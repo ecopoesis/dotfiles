@@ -18,8 +18,9 @@ export SVN_EDITOR="vim"
 export MANPAGER="less -X"
 
 # Prefer US English and use UTF-8
+export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export LANG="en_US"
+export LANG="en_US.UTF-8"
 
 # make SSH agent work
 if [ -z "$SSH_AUTH_SOCK" ]; then
