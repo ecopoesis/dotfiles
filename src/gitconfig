@@ -21,6 +21,7 @@
 [color]
     ui = auto
 [alias]
+		# order matters here: historically repo's had master so even after switching to main, they may still dead master branches 
 		trunk = !git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master' && :
     pu = push -u
     ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
