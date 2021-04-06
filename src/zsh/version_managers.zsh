@@ -11,9 +11,10 @@ if [ -d "$HOME/.rvm" ] ; then
 fi
 
 # load jenv
-if exists jenv ; then
-  eval "$(jenv init -)"
-fi
+#if exists jenv ; then
+#  eval "$(jenv init -)"
+#fi
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 
 # load NVM
 if [ -d "$HOME/.nvm" ] ; then

@@ -171,7 +171,7 @@ build_prompt() {
   prompt_pyenv
   prompt_nvm
   prompt_rvm
-  prompt_jenv
+#  prompt_jenv
   prompt_aws
   prompt_exitcode
   prompt_open

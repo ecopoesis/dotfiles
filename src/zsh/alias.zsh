@@ -33,9 +33,9 @@ if ! [ -x "$(command -v tailf)" ]; then
   alias tailf='tail -f'
 fi
 
-# use mac git instead of macports
-if [ -f /usr/bin/git ] ; then
-  alias git=/usr/bin/git
+# use homebrew git instead of xcode
+if [ -f /usr/local/bin/git ] ; then
+  alias git=/usr/local/bin/git
 fi
 
 # never accidentally emacs
