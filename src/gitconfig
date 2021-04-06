@@ -1,6 +1,6 @@
 [user]
-	name = Mike Roberts
-	email = miker@miker.org
+	name = mroberts
+	email = mroberts@cargurus.com
 	signingkey = 72B609CAEB8B69C9
 [push]
 	default = current
@@ -45,8 +45,9 @@
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
     branches = branch
 
-    # open GitHub diff view
-    comp = !git pu && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
+    # open GitHub diff view s/.*@\(.*\):.*/\1/
+    web = !echo 'git@github.com:ecopoesis/dotfiles.git' | sed 's/.*@\\(.*\\):.*/\\1/' && :
+    comp = !git pu && open \"https://$(git web)/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
 
     # get the commit message description of the first commit in this branch
     get-first = !git log `git trunk`..`git rev-parse --abbrev-ref HEAD` --pretty=format:%B | tail -1 && :

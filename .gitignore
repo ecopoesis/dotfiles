@@ -2,3 +2,5 @@ old
 .tmux.conf.swp
 src/vim/.netrwhist
 src/vim/plugged
+.idea
+
