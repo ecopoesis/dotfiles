@@ -1,14 +1,14 @@
 [user]
-	name = Mike Roberts
-	email = miker@miker.org
-	signingkey = 72B609CAEB8B69C9
+	name = mroberts
+	email = mroberts@cargurus.com
+	signingkey = 94218F708BF673E3
 [push]
 	default = current
 [core]
 	trustctime = false
 	autocrlf = input
 	editor = vim
-	excludesfile = /Users/miker/.gitignore_global
+	excludesfile = ~/.gitignore_global
 [merge]
 	tool = intellij
 [mergetool "intellij"]
@@ -21,8 +21,8 @@
 [color]
     ui = auto
 [alias]
-		# order matters here: historically repo's had master so even after switching to main, they may still dead master branches 
-		trunk = !git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master' && :
+    # order matters here: historically repo's had master so even after switching to main, they may still have dead master branches 
+    trunk = !git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master' && :
     pu = push -u
     ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
     bls = branch --sort=-committerdate
@@ -45,8 +45,9 @@
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
     branches = branch
 
-    # open GitHub diff view
-    comp = !git pu && open \"https://github.com/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
+    # open GitHub diff view s/.*@\(.*\):.*/\1/
+    web = !echo $(git remote get-url origin) | sed 's/.*@\\(.*\\):.*/\\1/' && :
+    comp = !git pu && open \"https://$(git web)/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
 
     # get the commit message description of the first commit in this branch
     get-first = !git log `git trunk`..`git rev-parse --abbrev-ref HEAD` --pretty=format:%B | tail -1 && :
