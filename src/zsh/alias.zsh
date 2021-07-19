@@ -46,3 +46,9 @@ alias vi='vim'
 
 # be smart
 alias be='bundle exec'
+
+# typos
+alias exho='echo'
+
+# lint only diff
+alias lintruby='rubocop -a $(git ls-files -m | grep -v erb)'

@@ -51,10 +51,10 @@ if [ -d "$HOME"/tools/hive ] ; then
 fi
 
 # JVM development setup
-export GRADLE_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
-export MAVEN_OPTS="-Xms512m -Xmx1024m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC"
-export SBT_OPTS="-Xms512m -Xmx2048m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
-export JAVA_OPTS="-Xms512m -Xmx4096m -XX:+CMSClassUnloadingEnabled -Duser.timezone=UTC"
+export GRADLE_OPTS="-Xms1024m -Xmx6114m -Dorg.gradle.daemon=true -Dorg.gradle.parallel=true"
+export MAVEN_OPTS="-Xms512m -Xmx1024m -Duser.timezone=UTC"
+export SBT_OPTS="-Xms512m -Xmx2048m -Duser.timezone=UTC -Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=9999"
+export JAVA_OPTS="-Xms512m -Xmx4096m -Duser.timezone=UTC"
 
 # set the number of open files to be 1024
 ulimit -S -n 1024
