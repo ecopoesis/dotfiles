@@ -16,3 +16,5 @@ tmp/**/*
 .rake_tasks~
 scratch
 .idea
+.idea/inspectionProfiles/Project_Default.xml
+
