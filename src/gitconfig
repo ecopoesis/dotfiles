@@ -42,6 +42,10 @@
     mum = !git fetch upstream && git merge upstream/`git trunk`
     mod = !git fetch origin && git merge origin/develop
     mud = !git fetch origin && git merge upstream/develop
+    rom = !git fetch origin && git rebase -i origin/`git trunk`
+    rum = !git fetch upstream && git rebase -i origin/`git trunk`
+    rod = !git fetch origin && git rebase -i origin/develop
+    rud = !git fetch upstream && git rebase -i origin/develop
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
     branches = branch
     recent = "!r() { refbranch=$1 count=$2; git for-each-ref --sort=-committerdate refs/heads --format='%(refname:short)|%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always --count=${count:-20} | while read line; do branch=$(echo \"$line\" | awk 'BEGIN { FS = \"|\" }; { print $1 }' | tr -d '*'); ahead=$(git rev-list --count \"${refbranch:-master}..${branch}\"); behind=$(git rev-list --count \"${branch}..${refbranch:-master}\"); colorline=$(echo \"$line\" | sed 's/^[^|]*|//'); echo \"$ahead|$behind|$colorline\" | awk -F'|' -vOFS='|' '{$5=substr($5,1,70)}1' ; done | ( echo \"ahead|behind||branch|lastcommit|message|author\\n\" && cat) | column -ts'|';}; r"

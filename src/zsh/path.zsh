@@ -29,8 +29,9 @@ pathadd /Applications/IntelliJ\ IDEA.app/Contents/MacOS
 pathadd /anaconda2/bin
 pathadd /anaconda3/bin
 pathadd "$HOME"/.jenv/bin
-pathadd /Applications/Visual Studio Code.app/Contents/Resources/app/bin
+pathadd "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 pathadd "$HOME"/.rvm/bin
+pathadd "$HOME"/.pyenv/bin
 
 # rust
 pathadd "$HOME"/.cargo/bin
@@ -53,10 +54,6 @@ fi
 # prefer gnu core tools
 if [ -e /usr/local/bin/brew ] && [ -d "$(brew --prefix coreutils)/libexec/gnubin" ]; then
     path=("$(brew --prefix coreutils)/libexec/gnubin", $path)
-fi
-
-if [ -e /usr/local/bin/pyenv ]; then
-    eval "$(pyenv init -)"
 fi
 
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi

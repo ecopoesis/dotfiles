@@ -52,3 +52,12 @@ load-nvmrc
 if exists direnv ; then
   eval "$(direnv hook bash)"
 fi
+
+# load pyenv
+if [ -d "$HOME/.pyenv" ]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+fi 
+
+if [ -e /usr/local/bin/pyenv ]; then
+    eval "$(pyenv init --path)"
+fi
