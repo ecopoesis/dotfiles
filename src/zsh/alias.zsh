@@ -52,3 +52,6 @@ alias exho='echo'
 
 # lint only diff
 alias lintruby='rubocop -a $(git ls-files -m | grep -v erb)'
+
+# kitty fix
+alias ssh="kitty +kitten ssh"
