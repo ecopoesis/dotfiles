@@ -63,3 +63,5 @@
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [commit]
 	gpgsign = true
+[pull]
+	rebase = false

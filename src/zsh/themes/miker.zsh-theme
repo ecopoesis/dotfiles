@@ -127,7 +127,7 @@ prompt_dir() {
 prompt_pyenv() {
   PYENV="$(pyenv_prompt_info)"
   if [ "$PYENV" != "system" ]; then
-    prompt_segment default green " $PYENV\n"
+    prompt_segment default green "py   $PYENV\n"
   fi
 }
 
@@ -136,7 +136,7 @@ prompt_nvm() {
     NVM_CURRENT="$(nvm current)"
     NVM_DEFAULT="$(nvm version default)"
     if [ "$NVM_CURRENT" != "$NVM_DEFAULT" ]; then
-      prompt_segment default 034 " $NVM_CURRENT\n"
+      prompt_segment default 034 "node $NVM_CURRENT\n"
     fi
   fi
 }
@@ -145,7 +145,7 @@ prompt_rvm() {
   if [ -x "$(command -v rvm-prompt)" ]; then
     RVM="$(rvm-prompt i v g p -d)"
     if [ ! -z "$RVM" ]; then
-      prompt_segment default 160 " $RVM\n"
+      prompt_segment default 160 "ruby $RVM\n"
     fi
   fi
 }
@@ -155,14 +155,23 @@ prompt_jenv() {
     JENV="$(jenv version-name)"
     JENV_GLOBAL="$(jenv global)"
     if [ "$JENV" != "system" ] && [ "$JENV" != "$JENV_GLOBAL" ]; then
-      prompt_segment default 014 " $JENV\n"
+      prompt_segment default 014 "java $JENV\n"
     fi
   fi
 }
 
 prompt_aws() {
   [[ -z $AWS_PROFILE ]] && return
-  prompt_segment default 208 " $AWS_PROFILE"
+  prompt_segment default 208 "aws  $AWS_PROFILE"
+}
+
+prompt_tfenv() {
+  if exists tfenv; then
+    TFENV="$(tfenv version-name)"
+    if [ ! -z "$TFENV" ]; then
+      prompt_segment default 99 "tf   $TFENV\n"
+    fi
+  fi
 }
 
 ## Main prompt
@@ -173,6 +182,7 @@ build_prompt() {
   prompt_rvm
   prompt_jenv
   prompt_aws
+  prompt_tfenv
   prompt_exitcode
   prompt_open
   prompt_user
