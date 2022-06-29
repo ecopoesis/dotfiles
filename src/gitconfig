@@ -21,37 +21,77 @@
 [color]
     ui = auto
 [alias]
+    # get the name of the 'trunk' branch: either main or master, preferring master
     # order matters here: historically repo's had master so even after switching to main, they may still have dead master branches 
     trunk = !git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master' && :
+
+    # aliases
+    branches = branch
     pu = push -u
-    ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
-    bls = branch --sort=-committerdate
     co = checkout
     st = status
+
+    # commit all
     ca = commit -a
     ca-nv = commit -a --no-verify
+    rebase = rebase --keep-empty
+
+    # commit and push
     cap = !git ca && git pu && :
     cap-nv = !git ca-nv && git pu && :
-    cob = !git checkout -b $1 && :
-    cobf = !git checkout -b feature/$1 && :
-    jira = !git co `git trunk` && git pull && git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
-    pr = !git pu && hub pull-request -b `git trunk` -F- <<< \"$1 [`git get-jira`]\n\n[[`git get-jira`]]\" && :
-    pr-jira = !git pu && hub pull-request -b `git trunk` -F- <<< \"$1 [$2]\n\n[[$2]]\" && :
-    rebase = rebase --keep-empty
-    mom = !git fetch origin && git merge origin/`git trunk`
-    mum = !git fetch upstream && git merge upstream/`git trunk`
-    mod = !git fetch origin && git merge origin/develop
-    mud = !git fetch origin && git merge upstream/develop
-    rom = !git fetch origin && git rebase -i origin/`git trunk`
-    rum = !git fetch upstream && git rebase -i origin/`git trunk`
-    rod = !git fetch origin && git rebase -i origin/develop
-    rud = !git fetch upstream && git rebase -i origin/develop
-    ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
-    branches = branch
-    recent = "!r() { refbranch=$1 count=$2; git for-each-ref --sort=-committerdate refs/heads --format='%(refname:short)|%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always --count=${count:-20} | while read line; do branch=$(echo \"$line\" | awk 'BEGIN { FS = \"|\" }; { print $1 }' | tr -d '*'); ahead=$(git rev-list --count \"${refbranch:-master}..${branch}\"); behind=$(git rev-list --count \"${branch}..${refbranch:-master}\"); colorline=$(echo \"$line\" | sed 's/^[^|]*|//'); echo \"$ahead|$behind|$colorline\" | awk -F'|' -vOFS='|' '{$5=substr($5,1,70)}1' ; done | ( echo \"ahead|behind||branch|lastcommit|message|author\\n\" && cat) | column -ts'|';}; r"
 
-    # open GitHub diff view s/.*@\(.*\):.*/\1/
+    # checkout new branch: `git cob new-branch`
+    cob = !git checkout -b $1 && :
+
+    # checkout new feature branch: `git cobf new-feature`
+    cobf = !git checkout -b feature/$1 && :
+
+    # checkout new feature branch and make an inital empty commit with a JIRA ticket ID: `git jira new-feature JIRA-123`
+    jira = !git co `git trunk` && git pull && git cobf $1 && git commit --allow-empty -m \"[$2]\" && :
+
+    # list branches
+    bls = branch --sort=-committerdate
+
+    # nice (natural?) log
+    ln = log --pretty=format:' %C(red)%h%Creset | %<(80,trunc)%s | %C(green)%ad%Creset |%C(blue) %ae %Creset' --date=format:'%a %Y-%m-%d %H:%M:%S'
+
+    # checkout the 'trunk' branch
+    com = !git co `git trunk`
+
+    # merge origin 'trunk' into this branch
+    mom = !git fetch origin && git merge origin/`git trunk`
+
+    # merge upstream 'trunk' into this branch
+    mum = !git fetch upstream && git merge upstream/`git trunk`
+
+    # merge origin 'develop' into this branch
+    mod = !git fetch origin && git merge origin/develop
+
+    # merge upstream 'develop' into this branch
+    mud = !git fetch origin && git merge upstream/develop
+
+    # rebase origin 'trunk' into this branch
+    rom = !git fetch origin && git rebase -i origin/`git trunk`
+
+    # rebase upstream 'trunk' into this branch
+    rum = !git fetch upstream && git rebase -i origin/`git trunk`
+
+    # rebase origin 'develop' into this branch
+    rod = !git fetch origin && git rebase -i origin/develop
+
+    # rebase upstream 'develop' into this branch
+    rud = !git fetch upstream && git rebase -i origin/develop
+    
+    # add an empty commit and push to force a CI run
+    ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
+
+    # show recent branches
+    recent = "!r() { refbranch=$1 count=$2; git for-each-ref --sort=-committerdate refs/heads --format='%(refname:short)|%(HEAD)%(color:yellow)%(refname:short)|%(color:bold green)%(committerdate:relative)|%(color:blue)%(subject)|%(color:magenta)%(authorname)%(color:reset)' --color=always --count=${count:-20} | while read line; do branch=$(echo \"$line\" | awk 'BEGIN { FS = \"|\" }; { print $1 }' | tr -d '*'); ahead=$(git rev-list --count \"${refbranch:-`git trunk`}..${branch}\"); behind=$(git rev-list --count \"${branch}..${refbranch:-`git trunk`}\"); colorline=$(echo \"$line\" | sed 's/^[^|]*|//'); echo \"$ahead|$behind|$colorline\" | awk -F'|' -vOFS='|' '{$5=substr($5,1,70)}1' ; done | ( echo \"ahead|behind||branch|lastcommit|message|author\\n\" && cat) | column -ts'|';}; r"
+
+    # remote (GitHub) URL
     web = !echo $(git remote get-url origin) | sed 's/.*@\\(.*\\):.*/\\1/' && :
+
+    # push and open GitHub diff to 'trunk' branch
     comp = !git pu && open \"https://$(git web)/$(dirname $(git remote get-url origin) | cut -d':' -f2)/$(basename $(git remote get-url origin) .git)/compare/$(git branch | sed -n 's/^\\* //p')\" && :
 
     # get the commit message description of the first commit in this branch
