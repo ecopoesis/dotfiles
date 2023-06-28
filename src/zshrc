@@ -22,6 +22,7 @@ COMPLETION_WAITING_DOTS="true"
 # much, much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+ZSH_PYENV_QUIET=true
 plugins=(git dir_chomp_tab pyenv gradle-completion zsh-tfenv)
 
 # lots of prompt stuff requires the version managers to be loaded
