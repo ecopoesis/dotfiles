@@ -21,7 +21,7 @@
 [color]
     ui = auto
 [alias]
-    # get the name of the 'trunk' branch: either main or master, preferring master
+    # get the name of the 'trunk' branch: either main or master, preferring main
     # order matters here: historically repo's had master so even after switching to main, they may still have dead master branches 
     trunk = !git show-ref --verify --quiet refs/heads/main && echo 'main' || echo 'master' && :
 
@@ -99,6 +99,9 @@
 
     # assumes the first commit of a branch had a commit message like [JIRA-123]
     get-jira = !git get-first | tail -c +2 | head -c -2 && :
+
+    # make stash good
+    staash = stash --all
 [pretty]
     colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [commit]
