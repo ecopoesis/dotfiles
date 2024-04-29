@@ -1,7 +1,11 @@
 [user]
-	name = mroberts
-	email = mroberts@cargurus.com
+	name = ecopoesis
+	email = miker@miker.org
 	signingkey = 94218F708BF673E3
+[includeIf "hasconfig:remote.*.url:git@code.cargurus.com:*/**"]
+	path = ~/.gitconfig.cargurus
+[includeIf "hasconfig:remote.*.url:https://code.cargurus.com/*/**"]
+	path = ~/.gitconfig.cargurus
 [push]
 	default = current
 [core]
