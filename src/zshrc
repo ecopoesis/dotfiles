@@ -42,3 +42,6 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # minikube completion
 source "$HOME"/.minikube-completion
+
+# kubctl completion
+source "$HOME"/.kubectl-completion
