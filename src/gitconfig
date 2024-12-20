@@ -78,13 +78,13 @@
     rom = !git fetch origin && git rebase -i origin/`git trunk`
 
     # rebase upstream 'trunk' into this branch
-    rum = !git fetch upstream && git rebase -i origin/`git trunk`
+    rum = !git fetch upstream && git rebase -i upstream/`git trunk`
 
     # rebase origin 'develop' into this branch
     rod = !git fetch origin && git rebase -i origin/develop
 
     # rebase upstream 'develop' into this branch
-    rud = !git fetch upstream && git rebase -i origin/develop
+    rud = !git fetch upstream && git rebase -i upstream/develop
     
     # add an empty commit and push to force a CI run
     ci = !git diff --exit-code &>/dev/null && git commit --allow-empty -m \"Force CI Run\" && git pu && :
