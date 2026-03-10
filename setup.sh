@@ -63,6 +63,9 @@ for FILE in "$DIR"/config/*; do
   rm -rf ~/.config/"$BASE" && ln -s "$FILE" ~/.config/"$BASE"
 done
 
+# install fzf (used by tmux URL picker, etc)
+brew install fzf
+
 "$DIR"/config_vim.sh
 "$DIR"/install_fonts.sh
 "$DIR"/install_ghostty.sh

@@ -3,4 +3,5 @@ old
 src/vim/.netrwhist
 src/vim/plugged
 .idea
+.omc
 
