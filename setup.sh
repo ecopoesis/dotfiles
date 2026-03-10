@@ -65,7 +65,7 @@ done
 
 "$DIR"/config_vim.sh
 "$DIR"/install_fonts.sh
-"$DIR"/install_kitty.sh
+"$DIR"/install_ghostty.sh
 
 # cleanup things that used to exist
 rm -f ~/.alias

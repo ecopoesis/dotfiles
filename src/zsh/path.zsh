@@ -33,6 +33,7 @@ pathadd "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 pathadd "$HOME"/.rvm/bin
 pathadd "$HOME"/.pyenv/bin
 pathadd /opt/homebrew/bin
+pathadd ~/.local/bin
 
 # rust
 pathadd "$HOME"/.cargo/bin
