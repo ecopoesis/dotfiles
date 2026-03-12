@@ -45,3 +45,6 @@ source "$HOME"/.minikube-completion
 
 # kubctl completion
 source "$HOME"/.kubectl-completion
+
+# windsurf
+pathadd "$HOME"/.codeium/windsurf/bin

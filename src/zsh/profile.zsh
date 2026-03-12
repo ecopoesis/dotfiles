@@ -67,3 +67,4 @@ export SALSIFY_HOME="$HOME"/code
 if exists brew; then
   export FLAGS_GETOPT_CMD="$(brew --prefix gnu-getopt)/bin/getopt"
 fi
+

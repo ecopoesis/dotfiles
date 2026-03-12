@@ -162,7 +162,7 @@ prompt_jenv() {
 
 prompt_aws() {
   [[ -z $AWS_PROFILE ]] && return
-  prompt_segment default 208 "aws  $AWS_PROFILE"
+  prompt_segment default 208 "aws  $AWS_PROFILE\n"
 }
 
 prompt_tfenv() {
