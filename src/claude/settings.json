@@ -1,0 +1,30 @@
+{
+  "model": "opus[1m]",
+  "effortLevel": "high",
+  "skipDangerousModePermissionPrompt": true,
+  "statusLine": {
+    "type": "command",
+    "command": "node $HOME/.claude/hud/omc-hud.mjs"
+  },
+  "enabledPlugins": {
+    "oh-my-claudecode@omc": true
+  },
+  "omcHud": {
+    "elements": {
+      "cwd": true,
+      "cwdFormat": "relative",
+      "gitBranch": true
+    }
+  },
+  "permissions": {
+    "allow": [
+      "Bash(echo \"TERM=$TERM\" && tmux display-message -p \"tmux TERM=#{default-terminal}\" && tmux show -g terminal-features 2>/dev/null && tmux show -g allow-passthrough 2>/dev/null)",
+      "Bash(tmux show-environment:*)",
+      "Bash(printf '\\e]8;;https://example.com\\e\\\\Click Here\\e]8;;\\e\\\\\\n')",
+      "Bash(brew install:*)",
+      "Bash(tmux list-keys:*)",
+      "Bash(git add:*)",
+      "Bash(git push:*)"
+    ]
+  }
+}

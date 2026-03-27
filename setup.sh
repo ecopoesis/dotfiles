@@ -39,6 +39,11 @@ mkdir -p "$OLD"
 for FILE in "$SRC"/*; do
   BASE="$(echo "$FILE" | cut -c "$LEN"-)"
 
+  # Skip directories that manage their own merging (e.g. claude — use apply-claude-prefs.sh)
+  if [ -d "$FILE" ] && [ "$BASE" = "claude" ]; then
+    continue
+  fi
+
   if ([ -f ~/."$BASE" ] || [ -d ~/."$BASE" ]) && ([ ! -f "$OLD/$BASE" ] && [ ! -d "$OLD/$BASE" ]) ; then
     echo "Moving ~/.$BASE to $OLD"
     cp -LR ~/."$BASE" "$OLD/$BASE"
