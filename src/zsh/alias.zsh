@@ -53,6 +53,8 @@ alias exho='echo'
 # lint only diff
 alias lintruby='rubocop -a $(git ls-files -m | grep -v erb)'
 
-# claude yolo
-alias claude-yolo="claude --dangerously-skip-permissions"
+# claude
+alias claude-shitty="command claude"
+alias claude="command claude --dangerously-skip-permissions"
+alias claude-yolo="command claude --dangerously-skip-permissions"
 
