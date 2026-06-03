@@ -58,3 +58,9 @@ alias claude-shitty="command claude"
 alias claude="command claude --dangerously-skip-permissions"
 alias claude-yolo="command claude --dangerously-skip-permissions"
 
+# codex
+if [ -f "$HOME/.codex/codex-bedrock.sh" ]; then
+  alias codex="$HOME/.codex/codex-bedrock.sh --yolo"
+else
+  alias codex="command codex --yolo"
+fi
