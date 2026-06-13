@@ -167,7 +167,7 @@ prompt_aws() {
 
 prompt_tfenv() {
   if exists tfenv; then
-    TFENV="$(tfenv version-name)"
+    TFENV="$(tfenv version-name 2>/dev/null)"
     if [ ! -z "$TFENV" ]; then
       prompt_segment default 99 "tf   $TFENV\n"
     fi

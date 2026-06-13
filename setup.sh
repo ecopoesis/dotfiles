@@ -71,6 +71,12 @@ done
 # install fzf (used by tmux URL picker, etc)
 brew install fzf
 
+# install ghostty terminfo so tmux/ssh work when TERM=xterm-ghostty
+if command -v tic >/dev/null 2>&1; then
+  echo "Installing xterm-ghostty terminfo to ~/.terminfo"
+  tic -x -o "$HOME/.terminfo" "$DIR"/terminfo/xterm-ghostty.ti
+fi
+
 "$DIR"/config_vim.sh
 "$DIR"/install_fonts.sh
 "$DIR"/install_ghostty.sh

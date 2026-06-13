@@ -17,10 +17,16 @@ export SVN_EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
-# Prefer US English and use UTF-8
-export LC_CTYPE="en_US.UTF-8"
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"
+# Prefer US English and use UTF-8, falling back to C.UTF-8 if unavailable
+if locale -a 2>/dev/null | grep -qi '^en_US\.utf-\?8$'; then
+  export LC_CTYPE="en_US.UTF-8"
+  export LC_ALL="en_US.UTF-8"
+  export LANG="en_US.UTF-8"
+else
+  export LC_CTYPE="C.UTF-8"
+  export LC_ALL="C.UTF-8"
+  export LANG="C.UTF-8"
+fi
 
 # make SSH agent work
 if [ -z "$SSH_AUTH_SOCK" ]; then
